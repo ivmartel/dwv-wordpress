@@ -81,21 +81,21 @@ class DicomSupport {
 
     $style = '';
     if ( !empty($width) && $width != 0 &&
-        !empty($height) && $height != 0 ) {
-        $style .= 'width: '.$width.'px;';
-        $style .= 'height: '.$height.'px;';
+      !empty($height) && $height != 0 ) {
+      $style .= 'width: '.$width.'px;';
+      $style .= 'height: '.$height.'px;';
     }
 
     $wlSetting = "";
     if ( !empty($windowCenter) && $windowCenter != 0 &&
-        !empty($windowWidth) && $windowWidth != 0 ) {
-        $wlSetting = '// set post window level
-            dwvApp.getViewController().addWindowLevelPresets({ "'.$wlName.'": {
-                "wl": new dwv.image.WindowLevel('.$windowCenter.', '.$windowWidth.'),
-                "name": "'.$wlName.'"} });
-            dwvApp.getViewController().setWindowLevelPreset("'.$wlName.'");
-            var index = dwvApp'.$id.'Gui.setSelectedPreset("'.$wlName.'");
-            dwvApp'.$id.'Gui.SetDefaultSelectedIndex(index);';
+      !empty($windowWidth) && $windowWidth != 0 ) {
+      $wlSetting = '// set post window level
+        dwvApp.getViewController().addWindowLevelPresets({ "'.$wlName.'": {
+          "wl": new dwv.image.WindowLevel('.$windowCenter.', '.$windowWidth.'),
+          "name": "'.$wlName.'"} });
+        dwvApp.getViewController().setWindowLevelPreset("'.$wlName.'");
+        var index = dwvApp'.$id.'Gui.setSelectedPreset("'.$wlName.'");
+        dwvApp'.$id.'Gui.SetDefaultSelectedIndex(index);';
     }
     // create app script
     // dwv.wp.init and listener flags were added in wp_enqueue_scripts defined below
@@ -106,66 +106,66 @@ class DicomSupport {
     var dwvApp'.$id.'Gui = null;
     // start app function
     function startApp'.$id.'() {
-        // initialise the application
-        var dwvApp = new dwv.App();
-        dwvApp.init({
-            "containerDivId": "'.$containerDivId.'",
-            "tools": ["Scroll", "ZoomAndPan", "WindowLevel"],
-            "isMobile": true
-        });
-        // app gui
-        dwvApp'.$id.'Gui = new dwvsimple.Gui(dwvApp);
-        // listen to load-end
-        dwvApp.addEventListener("load-end", function (/*event*/) {
-            // enable actions
-            dwvApp.getElement("tools").disabled = false;
-            dwvApp.getElement("reset").disabled = false;
-            dwvApp.getElement("presets").disabled = false;
-            // if mono slice, remove scroll tool (default first)
-            if (dwvApp.isMonoSliceData() && dwvApp.getImage().getNumberOfFrames() === 1) {
-                var toolsSelect = dwvApp.getElement("tools");
-                for (var i = 0; i < toolsSelect.options.length; ++i) {
-                    if (toolsSelect.options[i].value === "Scroll") {
-                        toolsSelect.remove(i);
-                    }
-                }
+      // initialise the application
+      var dwvApp = new dwv.App();
+      dwvApp.init({
+        "containerDivId": "'.$containerDivId.'",
+        "tools": ["Scroll", "ZoomAndPan", "WindowLevel"],
+        "isMobile": true
+      });
+      // app gui
+      dwvApp'.$id.'Gui = new dwvsimple.Gui(dwvApp);
+      // listen to load-end
+      dwvApp.addEventListener("load-end", function (/*event*/) {
+        // enable actions
+        dwvApp.getElement("tools").disabled = false;
+        dwvApp.getElement("reset").disabled = false;
+        dwvApp.getElement("presets").disabled = false;
+        // if mono slice, remove scroll tool (default first)
+        if (dwvApp.isMonoSliceData() && dwvApp.getImage().getNumberOfFrames() === 1) {
+          var toolsSelect = dwvApp.getElement("tools");
+          for (var i = 0; i < toolsSelect.options.length; ++i) {
+            if (toolsSelect.options[i].value === "Scroll") {
+              toolsSelect.remove(i);
             }
-            // update presets
-            dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
-            '.$wlSetting.'
-        });
-        // listen to wl-center-change
-        dwvApp.addEventListener("wl-center-change", function (/*event*/) {
-            // update presets (in case new was added)
-            dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
-            // suppose it is a manual change so switch preset to manual
-            dwvApp'.$id.'Gui.setSelectedPreset("manual");
-        });
-        // handle full screen exit
-        function onFullscreenExit() {
-            var container = document.getElementById("'.$containerDivId.'");
-            var divs = container.getElementsByClassName("layerContainer");
-            divs[0].setAttribute("style","'.$style.'");
-            // resize app
-            dwvApp.onResize();
+          }
         }
-        handleFullscreenExit(onFullscreenExit);
-        // load data
-        dwvApp.loadURLs(['.$urls.']);
+        // update presets
+        dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
+        '.$wlSetting.'
+      });
+      // listen to wl-center-change
+      dwvApp.addEventListener("wl-center-change", function (/*event*/) {
+        // update presets (in case new was added)
+        dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
+        // suppose it is a manual change so switch preset to manual
+        dwvApp'.$id.'Gui.setSelectedPreset("manual");
+      });
+      // handle full screen exit
+      function onFullscreenExit() {
+        var container = document.getElementById("'.$containerDivId.'");
+        var divs = container.getElementsByClassName("layerContainer");
+        divs[0].setAttribute("style","'.$style.'");
+        // resize app
+        dwvApp.onResize();
+      }
+      handleFullscreenExit(onFullscreenExit);
+      // load data
+      dwvApp.loadURLs(['.$urls.']);
     }
     // launch when page and i18n are loaded
     function launchApp'.$id.'() {
-        if ( domContentLoaded && i18nInitialised ) {
-            startApp'.$id.'();
-        }
+      if ( domContentLoaded && i18nInitialised ) {
+        startApp'.$id.'();
+      }
     }
     dwv.i18nOnInitialised( function () {
-        i18nInitialised = true;
-        launchApp'.$id.'();
+      i18nInitialised = true;
+      launchApp'.$id.'();
     });
     document.addEventListener("DOMContentLoaded", function (/*event*/) {
-        domContentLoaded = true;
-        launchApp'.$id.'();
+      domContentLoaded = true;
+      launchApp'.$id.'();
     });';
 
     // add script to queue
@@ -216,23 +216,23 @@ class DicomSupport {
     // width/height
     $width = 0;
     if ( !empty($atts['width']) ) {
-        $width = $atts['width'];
+      $width = $atts['width'];
     }
     $height = 0;
     if ( !empty($atts['height']) ) {
-        $height = $atts['height'];
+      $height = $atts['height'];
     }
 
     // window level
     $wc = 0;
     $ww = 0;
     if ( !empty($atts['window_center']) && !empty($atts['window_width']) ) {
-        $wc = $atts['window_center'];
-        $ww = $atts['window_width'];
+      $wc = $atts['window_center'];
+      $ww = $atts['window_width'];
     }
     $wlName = "Extra";
     if ( !empty($atts['wl_name']) ) {
-        $wlName = $atts['wl_name'];
+      $wlName = $atts['wl_name'];
     }
 
     // split file list: given as "file1, file2",
@@ -451,37 +451,37 @@ class DicomSupport {
    */
   function print_media_templates() { ?>
     <script type="text/html" id="tmpl-custom-gallery-setting">
-        <h3 style="z-index: -1;">___________________________________________________________________________________________</h3>
-        <h3>Optional Settings</h3>
-        <label class="setting">
-            <span><?php _e('Preset name'); ?></span>
-            <input type="text" value="" data-setting="wl_name" style="float:right;">
-        </label>
-        <label class="setting">
-            <span><?php _e('Window center'); ?></span>
-            <input type="number" value="" data-setting="window_center" style="float:right;" min="1">
-        </label>
-        <label class="setting">
-            <span><?php _e('Window width'); ?></span>
-            <input type="number" value="" data-setting="window_width" style="float:right;" min="1">
-        </label>
+      <h3 style="z-index: -1;">___________________________________________________________________________________________</h3>
+      <h3>Optional Settings</h3>
+      <label class="setting">
+        <span><?php _e('Preset name'); ?></span>
+        <input type="text" value="" data-setting="wl_name" style="float:right;">
+      </label>
+      <label class="setting">
+        <span><?php _e('Window center'); ?></span>
+        <input type="number" value="" data-setting="window_center" style="float:right;" min="1">
+      </label>
+      <label class="setting">
+        <span><?php _e('Window width'); ?></span>
+        <input type="number" value="" data-setting="window_width" style="float:right;" min="1">
+      </label>
     </script>
     <script>
-        jQuery(document).ready(function ()
-        {
-            _.extend(wp.media.gallery.defaults, {
-                wl_name: 'Extra',
-                window_center: '0',
-                window_width: '0'
-            });
-
-            wp.media.view.Settings.Gallery = wp.media.view.Settings.Gallery.extend({
-                template: function (view){
-                    return wp.media.template('gallery-settings')(view) +
-                        wp.media.template('custom-gallery-setting')(view);
-                }
-            });
+      jQuery(document).ready(function ()
+      {
+        _.extend(wp.media.gallery.defaults, {
+          wl_name: 'Extra',
+          window_center: '0',
+          window_width: '0'
         });
+
+        wp.media.view.Settings.Gallery = wp.media.view.Settings.Gallery.extend({
+          template: function (view){
+            return wp.media.template('gallery-settings')(view) +
+              wp.media.template('custom-gallery-setting')(view);
+          }
+        });
+      });
     </script>
   <?php }
 
@@ -496,38 +496,38 @@ class DicomSupport {
   function post_gallery($output, $atts, $instance) {
     // attributes
     $atts = shortcode_atts( array(
-        'order' => 'ASC',
-        'orderby' => 'menu_order ID',
-        'include' => '',
-        'size' => 'full',
-        'window_center' => 0,
-        'window_width' => 0,
-        'wl_name' => 'Extra'
-        ), $atts, 'gallery'
+      'order' => 'ASC',
+      'orderby' => 'menu_order ID',
+      'include' => '',
+      'size' => 'full',
+      'window_center' => 0,
+      'window_width' => 0,
+      'wl_name' => 'Extra'
+      ), $atts, 'gallery'
     );
 
     // size
     $width = 0;
     $height = 0;
     if ( $atts['size'] == "thumbnail" ) {
-        $width = 100;
-        $height = 100;
+      $width = 100;
+      $height = 100;
     }
     else if ( $atts['size'] == "medium" ) {
-        $width = 250;
-        $height = 250;
+      $width = 250;
+      $height = 250;
     }
     else if ( $atts['size'] == "large" ) {
-        $width = 500;
-        $height = 500;
+      $width = 500;
+      $height = 500;
     }
 
     // window level
     $wc = 0;
     $ww = 0;
     if ( !empty($atts['window_center']) && !empty($atts['window_width']) ) {
-        $wc = $atts['window_center'];
-        $ww = $atts['window_width'];
+      $wc = $atts['window_center'];
+      $ww = $atts['window_width'];
     }
     $wlName = $atts['wl_name'];
 
