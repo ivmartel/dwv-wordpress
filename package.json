@@ -1,6 +1,6 @@
 {
   "name": "dwv-wordpress",
-  "description": "Simple medical viewer using DWV (DICOM Web Viewer).",
+  "description": "DWV (DICOM Web Viewer) plugin for wordpress.",
   "keywords": [
     "DICOM",
     "medical",
@@ -8,12 +8,29 @@
   ],
   "license": "GPL-3.0",
   "author": "ivmartel <ivmartel@gmail.com>",
-  "homepage": "https://ivmartel.github.io/dwv/",
+  "homepage": "https://ivmartel.github.io/dwv-wordpress",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ivmartel/dwv.git"
+    "url": "git://github.com/ivmartel/dwv-wordpress.git"
   },
   "dependencies": {
     "dwv": "0.26.2"
-  }
+  },
+  "devDependencies": {
+		"@wordpress/env": "^5.11.0",
+		"@wordpress/icons": "^9.17.0",
+		"@wordpress/scripts": "^25.3.0"
+	},
+  "scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"wp-env": "wp-env",
+		"wpstart": "wp-env start",
+		"wpstop": "wp-env stop"
+	}
 }
