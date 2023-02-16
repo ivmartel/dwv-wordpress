@@ -288,14 +288,14 @@ class DicomSupport {
       array('i18next-xhr', 'i18next-langdetect', 'jszip', 'pdfjs-jpg', 'pdfjs-jpx', 'rii-loss', 'dwv-rle'), null );
     // wordpress viewer
     wp_register_script( 'dwv-wordpress',
-      plugins_url('appgui.js', __FILE__ ),
+      plugins_url('public/appgui.js', __FILE__ ),
       array( 'dwv' ), null );
     wp_register_style( 'dwv-wordpress',
       plugins_url('style.css', __FILE__ ) );
 
     // wp special
     wp_register_script( 'wpinit',
-      plugins_url('wpinit.js', __FILE__ ),
+      plugins_url('public/wpinit.js', __FILE__ ),
       array( 'dwv' ), null );
     wp_localize_script( 'wpinit', 'wp', array('pluginsUrl' => plugins_url()) );
     $script = '
