@@ -1,0 +1,9 @@
+# ignore source folders
+/src
+/tests
+
+# ignore resources
+/resources
+
+# root files (will keep plugin main file, license and readme)
+/*.*
