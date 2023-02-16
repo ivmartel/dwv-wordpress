@@ -1,18 +1,24 @@
 .dwv {
   text-align: center;
 }
+
 .dwv .toolbar {
   margin: 5px;
 }
-.dwv .toolbar button{
+
+.dwv .toolbar button {
   padding: 0.5em;
 }
+
 .dwv .layerContainer {
-  margin: auto; text-align: center;
+  margin: auto;
+  text-align: center;
 }
+
 .dwv-legend {
   text-align: center;
 }
+
 .dwv label {
   font-size: 60%;
   color: #8a979f;
