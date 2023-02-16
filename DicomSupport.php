@@ -69,7 +69,7 @@ class DicomSupport {
     $height = 0,
     $windowCenter = 0,
     $windowWidth = 0,
-    $wlName) {
+    $wlName = 0) {
     // enqueue base scripts
     wp_enqueue_script('dwv-wordpress');
     wp_enqueue_style('dwv-wordpress');
