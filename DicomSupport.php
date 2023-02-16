@@ -291,7 +291,7 @@ class DicomSupport {
       plugins_url('public/appgui.js', __FILE__ ),
       array( 'dwv' ), null );
     wp_register_style( 'dwv-wordpress',
-      plugins_url('style.css', __FILE__ ) );
+      plugins_url('public/style.css', __FILE__ ) );
 
     // wp special
     wp_register_script( 'wpinit',
