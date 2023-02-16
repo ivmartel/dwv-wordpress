@@ -210,7 +210,8 @@ class DicomSupport {
   */
   function dcm_shortcode($atts, $content = null) {
     // check that we have a src attribute
-    if ( empty($atts['src']) ) {
+    if ( empty($atts['src']) && empty($atts['ids']) ) {
+      error_log('Missing required src or ids in dcm shortcode.');
       return;
     }
     // width/height
@@ -235,10 +236,19 @@ class DicomSupport {
       $wlName = $atts['wl_name'];
     }
 
-    // split file list: given as "file1, file2",
+    // split input list: given as "file1, file2",
     //   it needs to be passed as "file1", "file2"
-    $fileList = array_map('trim', explode(',', $atts['src']));
+    if ( !empty($atts['ids']) ) {
+      // get url from media id
+      $idToUrl = function(string $item): string {
+        return wp_get_attachment_url(trim($item));
+      };
+      $fileList = array_map($idToUrl, explode(',', $atts['ids']));
+    } else if ( !empty($atts['src']) ) {
+      $fileList = array_map('trim', explode(',', $atts['src']));
+    }
     $urls = '"' . implode('","', $fileList) . '"';
+
     // return html
     return $this->create_dwv_html($urls, $width, $height, $wc, $ww, $wlName);
   }
