@@ -180,8 +180,8 @@ class DicomSupport {
       launchApp'.$id.'();
     });';
 
-    // add script to queue
-    wp_add_inline_script('wpinit', $script);
+    // add script to 'wpinit'
+    $this->wpinit($script);
 
     // create html
     $html = '
@@ -315,18 +315,39 @@ class DicomSupport {
     wp_register_style( 'dwv-wordpress',
       plugins_url('public/style.css', __FILE__ ) );
 
-    // wp special
-    wp_register_script( 'wpinit',
-      plugins_url('public/wpinit.js', __FILE__ ),
-      array( 'dwv' ), null );
-    wp_localize_script( 'wpinit', 'wp', array('pluginsUrl' => plugins_url()) );
-    $script = '
-    // call special wp init
-    dwv.wp.init();
-    // listener flags
-    var domContentLoaded = false;
-    var i18nInitialised = false;';
-    wp_add_inline_script('wpinit', $script);
+    // wpinit
+    $this->wpinit(NULL);
+  }
+
+  /**
+   * Add a js script to the 'wpinit' one. Registers 'wpinit' if
+   * not already done.
+   * @param script The script to add.
+   */
+  function wpinit($script) {
+    // register the 'wpinit' script if not done yet
+    // (it is possible 'wp_enqueue_scripts' was not called yet
+    //  as for example in block themes)
+    if ( !wp_script_is( 'wpinit', 'registered' ) ) {
+      wp_register_script( 'wpinit',
+        plugins_url('public/wpinit.js', __FILE__ ),
+        array( 'dwv' ), null );
+      // get the plugin url (to pass it to i18n)
+      wp_localize_script( 'wpinit', 'wp', array('pluginsUrl' => plugins_url()) );
+      // script to launch the wpinit function
+      $script0 = '
+      // call special wp init
+      dwv.wp.init();
+      // listener flags
+      var domContentLoaded = false;
+      var i18nInitialised = false;';
+      wp_add_inline_script('wpinit', $script0);
+    }
+
+    // extra, image specific, script
+    if (!is_null($script)) {
+      wp_add_inline_script('wpinit', $script);
+    }
   }
 
   /**
