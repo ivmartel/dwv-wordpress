@@ -39,12 +39,12 @@ DICOM is the standard medical image format, see [DICOM](https://en.wikipedia.org
 
 Here are the steps needed to add a 'Dicom' block:
 
-1. In the post editor, find the 'Dicom' block,
+1. In the post editor, find and add a 'Dicom' block,
 1. Click the `Media Library` button,
 1. Upload files on the `Upload Files` tab or choose some from the `Media Library` tab,
 1. Click 'Select',
 1. This brings you back to the editor and adds the dcm shortcode to the post,
-1. Click the `Preview Changes` button to see it in action!
+1. Click the `Preview` button to see it in action!
 
 You can click back on the generated shortcode to make the 'Dicom' block reappear and modify your selection.
 
@@ -77,15 +77,10 @@ The steps to add DICOM files to a gallery are similar than for images. They are:
 1. This brings you back to the editor and adds the gallery shortcode to the post,
 1. Click the `Preview Changes` button to see it in action!
 
-Warning: this works with wordpress version inferior to 6...
-
 = Error loading data =
 DWV supports most of the DICOM standard but it can sometimes fail to load data. Please refer to the
 [Dicom-Support](https://github.com/ivmartel/dwv/wiki/Dicom-Support) page on its wiki to see what it supports.
 You can test your data on the latest live version of DWV on its [demo](http://ivmartel.github.io/dwv/demo/stable/viewers/mobile/index.html) page.
-
-= Wordpress 5 blocks =
-Wordpress 5 introduced a new [block editor](https://developer.wordpress.org/block-editor/). This plugin is not yet compatible with the 'image' or 'gallery' blocks, you need to use a 'classic' block and then choose the ‘add media’ button to insert DICOM data in your posts.
 
 == Changelog ==
 
