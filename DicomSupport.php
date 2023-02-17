@@ -3,7 +3,7 @@
 Plugin Name: DICOM Support
 Plugin URI:
 Description: DICOM support for Wordpress: allows to upload DICOM (*.dcm) files in the media library and add them to a post. The display is done using the DICOM Web Viewer (<a href="https://github.com/ivmartel/dwv">DWV</a>).
-Version: 0.8.2
+Version: 0.9.0
 Author: ivmartel
 Author URI: https://github.com/ivmartel
 */
