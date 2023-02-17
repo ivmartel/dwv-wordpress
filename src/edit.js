@@ -86,7 +86,7 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
           icon={ file }
           label={ __( 'DICOM Images', 'dicomsupport' ) }
           instructions={ __(
-            'Select files from the media library.',
+            'Select or modify files from the media library.',
             'dicomsupport'
           ) }
         >
@@ -97,7 +97,7 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
               value={ attributes.ids }
               multiple={ true }
               render={ ( { open } ) => (
-                <Button variant="tertiary" onClick={ open }>
+                <Button variant="primary" onClick={ open }>
                   Media Library
                 </Button>
               ) }
