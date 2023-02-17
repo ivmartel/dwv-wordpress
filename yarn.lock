@@ -3825,10 +3825,10 @@ duplexer@^0.1.2:
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
-dwv@0.26.2:
-  version "0.26.2"
-  resolved "https://registry.yarnpkg.com/dwv/-/dwv-0.26.2.tgz#ff98d73ea4a1922ed861928c71485752f455eb62"
-  integrity sha512-wKgWQtpvX5BeGpjIS8vXPrqohaaqYgG5qEuWpfaOHpYZiOFUjCyeMSse4VfuFlhIHizqkRzqTPg1Eur0GL843Q==
+dwv@0.26.3:
+  version "0.26.3"
+  resolved "https://registry.yarnpkg.com/dwv/-/dwv-0.26.3.tgz#1bcbe33059b10683a9b6b5a81ba8af814a3c718d"
+  integrity sha512-Mz+cvNT44vfAVJmnHxzQF8UZpWx5ptEiwNMNfGzvJt+jmxPlYTnyk1Iq5XWyo5aXhSJ/9PFUPT4QVtobI2lTpA==
   dependencies:
     i18next "~12.1.0"
     i18next-browser-languagedetector "~3.0.0"
