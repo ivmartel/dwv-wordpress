@@ -14,15 +14,17 @@ Adds DICOM (standard for medical image format) support to Wordpress!
 The DICOM Support plugin adds the following functionalities to Wordpress:
 
 * allows to upload DICOM (*.dcm) files in the media library,
-* allows to insert DICOM individual files or galleries to a blog post from the media library (creates the short-code / gallery automatically).
+* adds a 'Dicom' block (wordpress 5 or above) that allows to select files from the media library (creates a 'dcm' shortcode)
+
+For wordpress previous to version 5:
+* allows to insert DICOM individual files to a blog post from the media library (by creating a 'dcm' shortcode)
+* allows to insert DICOM galleries to a blog post from the media library (by overwritting the 'gallery' shortcode)
 
 The display is done using the open source DICOM Web Viewer ([DWV](https://github.com/ivmartel/dwv)).
 
 See it live at: [dwvblog](https://tyarcaouen.synology.me/wordpress/dwvblog).
 
 More details on how to add DICOM file(s) to your post can be found in the FAQ.
-
-**WARNING**: for Wordpress 5 users, you cannot add dicom views with the new 'image' or 'gallery' blocks, you need to use a 'classic' block and then choose the ‘add media’ button.
 
 == Installation ==
 
@@ -33,7 +35,20 @@ Upload the DICOM support plugin from the WordPress plugin directory to your blog
 = DICOM? =
 DICOM is the standard medical image format, see [DICOM](https://en.wikipedia.org/wiki/DICOM) on wikipedia or at [NEMA](http://dicom.nema.org/).
 
-= Add an individual file =
+= Add a Dicom block (wordpress >= version 5) =
+
+Here are the steps needed to add a 'Dicom' block:
+
+1. In the post editor, find the 'Dicom' block,
+1. Click the `Media Library` button,
+1. Upload files on the `Upload Files` tab or choose some from the `Media Library` tab,
+1. Click 'Select',
+1. This brings you back to the editor and adds the dcm shortcode to the post,
+1. Click the `Preview Changes` button to see it in action!
+
+You can click back on the generated shortcode to make the 'Dicom' block reappear and modify your selection.
+
+= Add an individual file (wordpress < version 5) =
 
 The steps to add a DICOM file to a post are similar than adding an image except you do not have a preview in the editor.
 They are:
@@ -46,7 +61,7 @@ They are:
 1. This brings you back to the editor and adds the dcm shortcode to the post,
 1. Click the `Preview Changes` button to see it in action!
 
-= Add a gallery =
+= Add a gallery (wordpress < version 5) =
 
 The gallery allows to load more than one slice and activates the scroll button.
 The steps to add DICOM files to a gallery are similar than for images. They are:
@@ -73,6 +88,11 @@ You can test your data on the latest live version of DWV on its [demo](http://iv
 Wordpress 5 introduced a new [block editor](https://developer.wordpress.org/block-editor/). This plugin is not yet compatible with the 'image' or 'gallery' blocks, you need to use a 'classic' block and then choose the ‘add media’ button to insert DICOM data in your posts.
 
 == Changelog ==
+
+= 0.9.0 =
+* Add the 'Dicom' block
+* Fix block theme support
+* Add support for 'ids' in the dcm shortcode
 
 = 0.8.2 =
 * Updated dwv to v0.26.2:
