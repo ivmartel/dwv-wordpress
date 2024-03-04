@@ -17,20 +17,20 @@
     "dwv": "0.26.3"
   },
   "devDependencies": {
-		"@wordpress/env": "^5.11.0",
-		"@wordpress/icons": "^9.17.0",
-		"@wordpress/scripts": "^25.3.0"
+    "@wordpress/env": "^5.11.0",
+    "@wordpress/icons": "^9.17.0",
+    "@wordpress/scripts": "^25.3.0"
 	},
   "scripts": {
-		"build": "wp-scripts build",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"packages-update": "wp-scripts packages-update",
-		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start",
-		"wp-env": "wp-env",
-		"wpstart": "wp-env start",
-		"wpstop": "wp-env stop"
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start",
+    "wp-env": "wp-env",
+    "wpstart": "wp-env start",
+    "wpstop": "wp-env stop"
 	}
 }
