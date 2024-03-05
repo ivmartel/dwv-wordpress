@@ -24,8 +24,8 @@
   "scripts": {
     "build": "wp-scripts build",
     "format": "wp-scripts format",
-    "lint:css": "wp-scripts lint-style ./src",
-    "lint:js": "wp-scripts lint-js ./src",
+    "lint:css": "wp-scripts lint-style ./src/*.scss",
+    "lint:js": "wp-scripts lint-js ./src/*.js",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
     "start": "wp-scripts start",
