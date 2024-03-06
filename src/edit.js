@@ -43,7 +43,11 @@ import './editor.scss';
  * @return {string} The shortcode.
  */
 export function getDcmShortcode( ids ) {
-  return '[dcm ids="' + ids.toString() + '"]';
+  let shortcode = '';
+  if (ids !== undefined && ids.length !== 0) {
+    shortcode = '[dcm ids="' + ids.toString() + '"]';
+  }
+  return shortcode;
 }
 
 /**
