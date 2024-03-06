@@ -17,9 +17,9 @@
     "dwv": "0.26.3"
   },
   "devDependencies": {
-    "@wordpress/env": "^5.11.0",
-    "@wordpress/icons": "^9.17.0",
-    "@wordpress/scripts": "^25.3.0"
+    "@wordpress/env": "^9.4.0",
+    "@wordpress/icons": "^9.43.0",
+    "@wordpress/scripts": "^27.3.0"
 	},
   "scripts": {
     "build": "wp-scripts build",
