@@ -24,7 +24,7 @@ import { getDcmShortcode } from './edit';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
  *
  * @param {SaveArgs} args The save arguments.
- * @return {WPElement} Element to render.
+ * @return {HTMLElement} Element to render.
  */
 export default function save( { attributes } ) {
   const blockProps = useBlockProps.save();

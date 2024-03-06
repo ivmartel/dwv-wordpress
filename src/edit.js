@@ -50,8 +50,8 @@ export function getDcmShortcode( ids ) {
  * The edit arguments.
  *
  * @typedef {Object} EditArgs
- * @property {Object} attributes The block attributes.
- * @property {boolean} isSelected Is the block selected?
+ * @property {Object}   attributes    The block attributes.
+ * @property {boolean}  isSelected    Is the block selected?
  * @property {Function} setAttributes The block attributes setter.
  */
 
@@ -62,7 +62,7 @@ export function getDcmShortcode( ids ) {
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *
  * @param {EditArgs} args The edit arguments.
- * @return {WPElement} Element to render.
+ * @return {HTMLElement} Element to render.
  */
 export default function Edit( { attributes, isSelected, setAttributes } ) {
   const blockProps = useBlockProps();
