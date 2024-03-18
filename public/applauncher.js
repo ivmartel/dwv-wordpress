@@ -19,7 +19,6 @@ var dwvsimple = dwvsimple || {};
  * @param {string} uid The app uid.
  * @param {object} [options] Start options:
  * - urls (string[]): list of urls to load
- * - dropbox (boolean): true to show dropbox
  * - wlpreset (object): default window level preset
  */
 function startApp(uid, options) {
@@ -148,28 +147,22 @@ function startApp(uid, options) {
     window.removeEventListener('keydown', abortOnCrtlX);
   });
 
-  // show dropbox by default, hide if specified
-  // var hideDropBox = typeof options !== 'undefined' &&
-  //   typeof options.dropbox !== 'undefined' &&
-  //   options.dropbox === false;
-  // if (!hideDropBox) {
-  //   // setup drop box
-  //   var dropBoxLoader = new dwvsimple.gui.DropboxLoader(dwvApp);
-  //   dropBoxLoader.init();
-  //   // show/hide drop box
-  //   dwvApp.addEventListener('loadstart', function (/*event*/) {
-  //     // hide drop box
-  //     dropBoxLoader.showDropbox(false);
-  //   });
-  //   dwvApp.addEventListener('loadend', function (/*event*/) {
-  //     // show the drop box if no item were received or
-  //     // if the load was aborted
-  //     if (!nLoadItem ||
-  //       nReceivedLoadAbort !== 0) {
-  //       dropBoxLoader.showDropbox(true);
-  //     }
-  //   });
-  // }
+  // // setup drop box
+  // var dropBoxLoader = new dwvsimple.gui.DropboxLoader(dwvApp);
+  // dropBoxLoader.init();
+  // // show/hide drop box
+  // dwvApp.addEventListener('loadstart', function (/*event*/) {
+  //   // hide drop box
+  //   dropBoxLoader.showDropbox(false);
+  // });
+  // dwvApp.addEventListener('loadend', function (/*event*/) {
+  //   // show the drop box if no item were received or
+  //   // if the load was aborted
+  //   if (!nLoadItem ||
+  //     nReceivedLoadAbort !== 0) {
+  //     dropBoxLoader.showDropbox(true);
+  //   }
+  // });
 
   // handle key events
   dwvApp.addEventListener('keydown', function (event) {
