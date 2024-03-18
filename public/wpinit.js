@@ -15,14 +15,10 @@ dwv.wp.init = function () {
   var dwvPath = wp.pluginsUrl + '/dicom-support/node_modules/dwv';
 
   // image decoders (for web workers)
-  dwv.image.decoderScripts = {
+  dwv.decoderScripts = {
     jpeg2000: dwvPath + '/decoders/pdfjs/decode-jpeg2000.js',
     'jpeg-lossless': dwvPath + '/decoders/rii-mango/decode-jpegloss.js',
     'jpeg-baseline': dwvPath + '/decoders/pdfjs/decode-jpegbaseline.js',
     rle: dwvPath + '/decoders/dwv/decode-rle.js',
   };
-  // check browser support
-  dwv.browser.check();
-  // initialise i18n
-  dwv.i18nInitialise( 'auto', dwvPath );
 };
