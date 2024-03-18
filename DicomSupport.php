@@ -92,8 +92,6 @@ class DicomSupport {
     // html var names
     $id = uniqid();
 
-    // start options
-
     // create app script
     $script = "// App ".$id."\n";
     $script .= "document.addEventListener('DOMContentLoaded', function (/*event*/) {\n";
