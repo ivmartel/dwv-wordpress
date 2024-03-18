@@ -308,15 +308,3 @@ function toggleFullScreen(divId) {
     document.exitFullscreen();
   }
 }
-
-// dwvsimple.handleFullscreenExit = function (callback) {
-//   var onFullscreenChange = function () {
-//     // when exiting full screen
-//     if (!document.fullscreenElement) {
-//       callback();
-//     }
-//   };
-//   document.addEventListener('fullscreenchange', function (/*event*/) {
-//     onFullscreenChange();
-//   });
-// };
