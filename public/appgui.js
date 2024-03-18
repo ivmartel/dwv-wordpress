@@ -1,3 +1,6 @@
+// Highly inspired from the dwv simplistic viewer
+// see https://github.com/ivmartel/dwv-simplistic
+
 /**
  * Application GUI.
  */
