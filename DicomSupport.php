@@ -82,134 +82,63 @@ class DicomSupport {
     $windowCenter = 0,
     $windowWidth = 0,
     $wlName = 0) {
-    // enqueue base scripts
-    wp_enqueue_script('dwv-wordpress');
+    // enqueue base style
     wp_enqueue_style('dwv-wordpress');
+    // enqueue base scripts
+    wp_enqueue_script('dwv-appgui');
+    wp_enqueue_script('dwv-applaunch');
     wp_enqueue_script('wpinit');
 
     // html var names
     $id = uniqid();
-    $containerDivId = "dwv-" . $id;
 
-    $style = '';
-    if ( !empty($width) && $width != 0 &&
-      !empty($height) && $height != 0 ) {
-      $style .= 'width: '.$width.'px;';
-      $style .= 'height: '.$height.'px;';
-    }
+    // start options
 
-    $wlSetting = "";
+    // create app script
+    $script = "// App ".$id."\n";
+    $script .= "document.addEventListener('DOMContentLoaded', function (/*event*/) {\n";
+    $script .= "  startApp('".$id."',\n";
+    $script .= "    {\n";
+    $script .= "      urls: [".$urls."]";
+    // possible input preset
     if ( !empty($windowCenter) && $windowCenter != 0 &&
       !empty($windowWidth) && $windowWidth != 0 ) {
-      $wlSetting = '// set post window level
-        dwvApp.getViewController().addWindowLevelPresets({ "'.$wlName.'": {
-          "wl": new dwv.image.WindowLevel('.$windowCenter.', '.$windowWidth.'),
-          "name": "'.$wlName.'"} });
-        dwvApp.getViewController().setWindowLevelPreset("'.$wlName.'");
-        var index = dwvApp'.$id.'Gui.setSelectedPreset("'.$wlName.'");
-        dwvApp'.$id.'Gui.SetDefaultSelectedIndex(index);';
+      $script .= ",\n";
+      $script .= "      wlpreset: {width: ".$windowWidth.
+        ", center: ".$windowCenter.
+        ", name: '".$wlName."'}";
     }
-    // create app script
-    // dwv.wp.init and listener flags were added in wp_enqueue_scripts defined below
-    $script = '
-    // namespace
-    var dwvsimple = dwvsimple || {};
-    // main application gui (global to be accessed from html)
-    var dwvApp'.$id.'Gui = null;
-    // start app function
-    function startApp'.$id.'() {
-      // initialise the application
-      var dwvApp = new dwv.App();
-      dwvApp.init({
-        "containerDivId": "'.$containerDivId.'",
-        "tools": ["Scroll", "ZoomAndPan", "WindowLevel"],
-        "isMobile": true
-      });
-      // app gui
-      dwvApp'.$id.'Gui = new dwvsimple.Gui(dwvApp);
-      // listen to load-end
-      dwvApp.addEventListener("load-end", function (/*event*/) {
-        // enable actions
-        dwvApp.getElement("tools").disabled = false;
-        dwvApp.getElement("reset").disabled = false;
-        dwvApp.getElement("presets").disabled = false;
-        // if mono slice, remove scroll tool (default first)
-        if (dwvApp.isMonoSliceData() && dwvApp.getImage().getNumberOfFrames() === 1) {
-          var toolsSelect = dwvApp.getElement("tools");
-          for (var i = 0; i < toolsSelect.options.length; ++i) {
-            if (toolsSelect.options[i].value === "Scroll") {
-              toolsSelect.remove(i);
-            }
-          }
-        }
-        // update presets
-        dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
-        '.$wlSetting.'
-      });
-      // listen to wl-center-change
-      dwvApp.addEventListener("wl-center-change", function (/*event*/) {
-        // update presets (in case new was added)
-        dwvApp'.$id.'Gui.updatePresets(dwvApp.getViewController().getWindowLevelPresetsNames());
-        // suppose it is a manual change so switch preset to manual
-        dwvApp'.$id.'Gui.setSelectedPreset("manual");
-      });
-      // handle full screen exit
-      function onFullscreenExit() {
-        var container = document.getElementById("'.$containerDivId.'");
-        var divs = container.getElementsByClassName("layerContainer");
-        divs[0].setAttribute("style","'.$style.'");
-        // resize app
-        dwvApp.onResize();
-      }
-      handleFullscreenExit(onFullscreenExit);
-      // load data
-      dwvApp.loadURLs(['.$urls.']);
-    }
-    // launch when page and i18n are loaded
-    function launchApp'.$id.'() {
-      if ( domContentLoaded && i18nInitialised ) {
-        startApp'.$id.'();
-      }
-    }
-    dwv.i18nOnInitialised( function () {
-      i18nInitialised = true;
-      launchApp'.$id.'();
-    });
-    document.addEventListener("DOMContentLoaded", function (/*event*/) {
-      domContentLoaded = true;
-      launchApp'.$id.'();
-    });';
+    // end options object
+    $script .= "\n    }\n";
+    $script .= "  )\n";
+    $script .= "})\n";
 
     // add script to 'wpinit'
     $this->wpinit($script);
 
+    // possible input size
+    $style = '';
+    if (!empty($width) && $width != 0) {
+      $style .= 'width: '.$width.'px;';
+    }
+    if (!empty($height) && $height != 0) {
+      $style .= 'height: '.$height.'px;';
+    }
+    if (!empty($style)) {
+      $style = "style=\"" . $style . "\"";
+    }
+
     // create html
     $html = '
     <!-- Main container div -->
-    <div id="'.$containerDivId.'" class="dwv">
+    <div id="dwv-'.$id.'" class="dwv" '.$style.'>
       <!-- Toolbar -->
-      <div class="toolbar">
-        <label for="tools">TOOLS:</label>
-        <select class="tools" name="tools" onChange="dwvApp'.$id.'Gui.onChangeTool(this.value)" disabled>
-          <option value="Scroll" data-i18n="tool.Scroll.name">Scroll</option>
-          <option value="ZoomAndPan" data-i18n="tool.ZoomAndPan.name">ZoomAndPan</option>
-          <option value="WindowLevel" data-i18n="tool.WindowLevel.name">WindowLevel</option>
-        </select>
-        <label for="presets">PRESETS:</label>
-        <select class="presets" name="presets" onChange="dwvApp'.$id.'Gui.onChangePreset(this.value)" disabled>
-          <option value="">Preset...</option>
-        </select>
-        <button class="reset" value="Reset" onClick="dwvApp'.$id.'Gui.onDisplayReset()" data-i18n="basics.reset" disabled >Reset</button>
-      </div>
+      <div id="toolbar-'.$id.'" class="toolbar"></div>
       <!-- Layer Container -->
-      <div class="layerContainer" style="'.$style.'">
-        <canvas class="imageLayer">Only for HTML5 compatible browsers...</canvas>
-      </div><!-- /layerContainer -->
+      <div id="layerGroup-'.$id.'" class="layerGroup">
+      </div>
     </div><!-- /dwv -->
     ';
-
-    // 'full screen' link (out of dwv div to not be in full screen)
-    $html .= '<p class="dwv-legend"><small><a href="#" onclick="makeFullscreen(\''.$containerDivId.'\');return false;">Full screen</a></small></p>';
 
     return $html;
   }
@@ -271,16 +200,10 @@ class DicomSupport {
   */
   function wp_enqueue_scripts() {
     $nodeModulesDir = 'node_modules';
-    // i18n
-    wp_register_script( 'i18next',
-      plugins_url($nodeModulesDir . '/i18next/i18next.min.js', __FILE__ ),
+    // konva
+    wp_register_script( 'konva',
+      plugins_url($nodeModulesDir . '/konva/konva.min.js', __FILE__ ),
       null, null );
-    wp_register_script( 'i18next-xhr',
-      plugins_url($nodeModulesDir . '/i18next-xhr-backend/i18nextXHRBackend.min.js', __FILE__ ),
-      array('i18next'), null );
-    wp_register_script( 'i18next-langdetect',
-      plugins_url($nodeModulesDir . '/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js', __FILE__ ),
-      array('i18next'), null );
     // jszip
     wp_register_script( 'jszip',
       plugins_url($nodeModulesDir . '/jszip/dist/jszip.min.js', __FILE__ ),
@@ -307,10 +230,13 @@ class DicomSupport {
     // DWV base
     wp_register_script( 'dwv',
       plugins_url($nodeModulesDir . '/dwv/dist/dwv.min.js', __FILE__ ),
-      array('i18next-xhr', 'i18next-langdetect', 'jszip', 'pdfjs-jpg', 'pdfjs-jpx', 'rii-loss', 'dwv-rle'), null );
+      array('konva', 'jszip', 'pdfjs-jpg', 'pdfjs-jpx', 'rii-loss', 'dwv-rle'), null );
     // wordpress viewer
-    wp_register_script( 'dwv-wordpress',
+    wp_register_script( 'dwv-appgui',
       plugins_url('public/appgui.js', __FILE__ ),
+      array( 'dwv' ), null );
+    wp_register_script( 'dwv-applaunch',
+      plugins_url('public/applauncher.js', __FILE__ ),
       array( 'dwv' ), null );
     wp_register_style( 'dwv-wordpress',
       plugins_url('public/style.css', __FILE__ ) );
@@ -335,12 +261,8 @@ class DicomSupport {
       // get the plugin url (to pass it to i18n)
       wp_localize_script( 'wpinit', 'wp', array('pluginsUrl' => plugins_url()) );
       // script to launch the wpinit function
-      $script0 = '
-      // call special wp init
-      dwv.wp.init();
-      // listener flags
-      var domContentLoaded = false;
-      var i18nInitialised = false;';
+      $script0 = "// call special wp init\n";
+      $script0 .= "dwv.wp.init();\n";
       wp_add_inline_script('wpinit', $script0);
     }
 
