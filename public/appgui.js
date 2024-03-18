@@ -242,7 +242,7 @@ dwvsimple.Gui = function (app, tools, uid) {
     var config = {
       '*': [
         {
-          divId: 'layerGroup0',
+          divId: 'layerGroup-' + uid,
           orientation: this.orientation
         }
       ]
