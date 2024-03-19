@@ -31,7 +31,7 @@ import {
   Placeholder,
   PanelBody,
   Button,
-  __experimentalNumberControl as NumberControl
+  TextControl,
 } from '@wordpress/components';
 
 /**
@@ -50,11 +50,11 @@ export function getDcmShortcode( attributes ) {
   }
   shortcode += ' ids="' + ids.toString() + '"';
   // number attributes
-  const attributeNames = ['height', 'width', 'window_center', 'window_width'];
-  for (const attributeName of attributeNames) {
-    const att = attributes[attributeName];
+  const attributeNames = [ 'height', 'width', 'window_center', 'window_width' ];
+  for ( const attributeName of attributeNames ) {
+    const att = attributes[ attributeName ];
     if ( att !== undefined && att !== 0 ) {
-      shortcode += ' '+ attributeName + '="' + att + '"';
+      shortcode += ' ' + attributeName + '="' + att + '"';
     }
   }
   shortcode += ']';
@@ -93,62 +93,51 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
   };
 
   // set an number attribute from its key and string value
-  const setIntAttribute = (key, value) => {
-    value = parseInt(value, 10);
+  const setIntAttribute = ( key, value ) => {
+    value = parseInt( value, 10 );
     // avoid NaN
-    if (isNaN(value)) {
+    if ( isNaN( value ) ) {
       value = 0;
     }
     const obj = {};
-    obj[key] = value;
+    obj[ key ] = value;
     setAttributes( obj );
-  }
+  };
 
   return (
     <div { ...blockProps }>
-        <InspectorControls>
-          <PanelBody
-            title={ __( 'View Size (optional)', 'dicomsupport' )}
-            initialOpen={ false }
-          >
-            <NumberControl
-              label={ __( 'Height (px)', 'dicomsupport' ) }
-              value={ attributes.height || 0 }
-              onChange={ ( value ) =>
-                setIntAttribute( 'height', value )
-              }
-              min={ 0 }
-            />
-            <NumberControl
-              label={ __( 'Width (px)', 'dicomsupport' ) }
-              value={ attributes.width || 0 }
-              onChange={ ( value ) =>
-                setIntAttribute( 'width', value )
-              }
-              min={ 0 }
-            />
-          </PanelBody>
-          <PanelBody
-            title={ __( 'Window level (optional)', 'dicomsupport' ) }
-            initialOpen={ false }
-          >
-            <NumberControl
-              label={ __( 'Window center', 'dicomsupport' ) }
-              value={ attributes.window_center || 0 }
-              onChange={ ( value ) =>
-                setIntAttribute( 'window_center', value )
-              }
-            />
-            <NumberControl
-              label={ __( 'Window width', 'dicomsupport' ) }
-              value={ attributes.window_width || 0 }
-              onChange={ ( value ) =>
-                setIntAttribute( 'window_width', value )
-              }
-              min={ 0 }
-            />
-          </PanelBody>
-        </InspectorControls>
+      <InspectorControls>
+        <PanelBody
+          title={ __( 'View Size (optional)', 'dicomsupport' ) }
+          initialOpen={ false }
+        >
+          <TextControl
+            label={ __( 'Height (px)', 'dicomsupport' ) }
+            value={ attributes.height || 0 }
+            onChange={ ( value ) => setIntAttribute( 'height', value ) }
+          />
+          <TextControl
+            label={ __( 'Width (px)', 'dicomsupport' ) }
+            value={ attributes.width || 0 }
+            onChange={ ( value ) => setIntAttribute( 'width', value ) }
+          />
+        </PanelBody>
+        <PanelBody
+          title={ __( 'Window level (optional)', 'dicomsupport' ) }
+          initialOpen={ false }
+        >
+          <TextControl
+            label={ __( 'Window center', 'dicomsupport' ) }
+            value={ attributes.window_center || 0 }
+            onChange={ ( value ) => setIntAttribute( 'window_center', value ) }
+          />
+          <TextControl
+            label={ __( 'Window width', 'dicomsupport' ) }
+            value={ attributes.window_width || 0 }
+            onChange={ ( value ) => setIntAttribute( 'window_width', value ) }
+          />
+        </PanelBody>
+      </InspectorControls>
       { attributes && ! isSelected ? (
         <div>{ getDcmShortcode( attributes ) }</div>
       ) : (
