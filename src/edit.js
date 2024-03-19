@@ -107,10 +107,7 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
   return (
     <div { ...blockProps }>
       <InspectorControls>
-        <PanelBody
-          title={ __( 'View Size (optional)', 'dicomsupport' ) }
-          initialOpen={ false }
-        >
+        <PanelBody title={ __( 'View Size (optional)', 'dicomsupport' ) }>
           <TextControl
             label={ __( 'Height (px)', 'dicomsupport' ) }
             value={ attributes.height || 0 }
@@ -122,17 +119,22 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
             onChange={ ( value ) => setIntAttribute( 'width', value ) }
           />
         </PanelBody>
-        <PanelBody
-          title={ __( 'Window level (optional)', 'dicomsupport' ) }
-          initialOpen={ false }
-        >
+        <PanelBody title={ __( 'Window level (optional)', 'dicomsupport' ) }>
           <TextControl
             label={ __( 'Window center', 'dicomsupport' ) }
+            help={ __(
+              'Both center and width need to be set.',
+              'dicomsupport'
+            ) }
             value={ attributes.window_center || 0 }
             onChange={ ( value ) => setIntAttribute( 'window_center', value ) }
           />
           <TextControl
             label={ __( 'Window width', 'dicomsupport' ) }
+            help={ __(
+              'Both center and width need to be set.',
+              'dicomsupport'
+            ) }
             value={ attributes.window_width || 0 }
             onChange={ ( value ) => setIntAttribute( 'window_width', value ) }
           />
