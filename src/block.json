@@ -10,6 +10,18 @@
 	"attributes": {
 		"ids" : {
 			"type": "array"
+		},
+		"height" : {
+			"type": "number"
+		},
+		"width" : {
+			"type": "number"
+		},
+		"window_center" : {
+			"type": "number"
+		},
+		"window_level" : {
+			"type": "number"
 		}
 	},
 	"supports": {

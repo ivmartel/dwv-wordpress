@@ -15,6 +15,7 @@ import { __ } from '@wordpress/i18n';
 import {
   MediaUpload,
   MediaUploadCheck,
+  InspectorControls,
   useBlockProps,
 } from '@wordpress/block-editor';
 
@@ -26,7 +27,12 @@ import { file } from '@wordpress/icons';
  *
  * @see https://wordpress.github.io/gutenberg
  */
-import { Placeholder, Button } from '@wordpress/components';
+import {
+  Placeholder,
+  PanelBody,
+  Button,
+  __experimentalNumberControl as NumberControl
+} from '@wordpress/components';
 
 /**
  * Get the dcm shortcode from attributes.
@@ -35,11 +41,23 @@ import { Placeholder, Button } from '@wordpress/components';
  * @return {string} The shortcode.
  */
 export function getDcmShortcode( attributes ) {
-  let shortcode = '';
+  let shortcode = '[dcm';
+  // ids: number[]
   const ids = attributes.ids;
-  if ( ids !== undefined && ids.length !== 0 ) {
-    shortcode = '[dcm ids="' + ids.toString() + '"]';
+  // return empty string if no ids
+  if ( ids === undefined || ids.length === 0 ) {
+    return '';
   }
+  shortcode += ' ids="' + ids.toString() + '"';
+  // number attributes
+  const attributeNames = ['height', 'width', 'window_center', 'window_width'];
+  for (const attributeName of attributeNames) {
+    const att = attributes[attributeName];
+    if ( att !== undefined && att !== 0 ) {
+      shortcode += ' '+ attributeName + '="' + att + '"';
+    }
+  }
+  shortcode += ']';
   return shortcode;
 }
 
@@ -74,8 +92,63 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
     setAttributes( { ids } );
   };
 
+  // set an number attribute from its key and string value
+  const setIntAttribute = (key, value) => {
+    value = parseInt(value, 10);
+    // avoid NaN
+    if (isNaN(value)) {
+      value = 0;
+    }
+    const obj = {};
+    obj[key] = value;
+    setAttributes( obj );
+  }
+
   return (
     <div { ...blockProps }>
+        <InspectorControls>
+          <PanelBody
+            title={ __( 'View Size (optional)', 'dicomsupport' )}
+            initialOpen={ false }
+          >
+            <NumberControl
+              label={ __( 'Height (px)', 'dicomsupport' ) }
+              value={ attributes.height || 0 }
+              onChange={ ( value ) =>
+                setIntAttribute( 'height', value )
+              }
+              min={ 0 }
+            />
+            <NumberControl
+              label={ __( 'Width (px)', 'dicomsupport' ) }
+              value={ attributes.width || 0 }
+              onChange={ ( value ) =>
+                setIntAttribute( 'width', value )
+              }
+              min={ 0 }
+            />
+          </PanelBody>
+          <PanelBody
+            title={ __( 'Window level (optional)', 'dicomsupport' ) }
+            initialOpen={ false }
+          >
+            <NumberControl
+              label={ __( 'Window center', 'dicomsupport' ) }
+              value={ attributes.window_center || 0 }
+              onChange={ ( value ) =>
+                setIntAttribute( 'window_center', value )
+              }
+            />
+            <NumberControl
+              label={ __( 'Window width', 'dicomsupport' ) }
+              value={ attributes.window_width || 0 }
+              onChange={ ( value ) =>
+                setIntAttribute( 'window_width', value )
+              }
+              min={ 0 }
+            />
+          </PanelBody>
+        </InspectorControls>
       { attributes && ! isSelected ? (
         <div>{ getDcmShortcode( attributes ) }</div>
       ) : (
