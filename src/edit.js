@@ -37,13 +37,14 @@ import { Placeholder, Button } from '@wordpress/components';
 import './editor.scss';
 
 /**
- * Get the dcm shortcode from a list of ids.
+ * Get the dcm shortcode from attributes.
  *
- * @param {Array} ids List of ids.
+ * @param {Object} attributes The block attributes.
  * @return {string} The shortcode.
  */
-export function getDcmShortcode( ids ) {
+export function getDcmShortcode( attributes ) {
   let shortcode = '';
+  const ids = attributes.ids;
   if ( ids !== undefined && ids.length !== 0 ) {
     shortcode = '[dcm ids="' + ids.toString() + '"]';
   }
@@ -83,8 +84,8 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
 
   return (
     <div { ...blockProps }>
-      { attributes.ids && ! isSelected ? (
-        <div>{ getDcmShortcode( attributes.ids ) }</div>
+      { attributes && ! isSelected ? (
+        <div>{ getDcmShortcode( attributes ) }</div>
       ) : (
         <Placeholder
           icon={ file }

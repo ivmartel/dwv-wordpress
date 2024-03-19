@@ -28,5 +28,5 @@ import { getDcmShortcode } from './edit';
  */
 export default function save( { attributes } ) {
   const blockProps = useBlockProps.save();
-  return <div { ...blockProps }>{ getDcmShortcode( attributes.ids ) }</div>;
+  return <div { ...blockProps }>{ getDcmShortcode( attributes ) }</div>;
 }
