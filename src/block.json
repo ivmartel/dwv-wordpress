@@ -20,7 +20,7 @@
 		"window_center" : {
 			"type": "number"
 		},
-		"window_level" : {
+		"window_width" : {
 			"type": "number"
 		}
 	},
