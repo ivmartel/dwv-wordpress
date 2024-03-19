@@ -29,14 +29,6 @@ import { file } from '@wordpress/icons';
 import { Placeholder, Button } from '@wordpress/components';
 
 /**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-import './editor.scss';
-
-/**
  * Get the dcm shortcode from attributes.
  *
  * @param {Object} attributes The block attributes.
