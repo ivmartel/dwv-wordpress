@@ -91,7 +91,7 @@ export default function Edit( { attributes, isSelected, setAttributes } ) {
           icon={ file }
           label={ __( 'DICOM Images', 'dicomsupport' ) }
           instructions={ __(
-            'Select or modify files from the media library.',
+            'Select or modify listed files from the media library.',
             'dicomsupport'
           ) }
         >
