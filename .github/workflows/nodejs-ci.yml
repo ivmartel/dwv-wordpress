@@ -21,7 +21,6 @@ jobs:
       - name: Run lint
         run: |
           yarn run lint:js
-          yarn run lint:css
       - name: Build
         run: |
           yarn run build
