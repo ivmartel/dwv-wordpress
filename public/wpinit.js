@@ -12,7 +12,7 @@ dwv.wp.init = function () {
   }
   dwv.wp.init_was_called = true;
 
-  var dwvPath = wp.pluginsUrl + '/dwv-wordpress/node_modules/dwv';
+  var dwvPath = wp.pluginsUrl + '/dicom-support/node_modules/dwv';
 
   // image decoders (for web workers)
   dwv.decoderScripts.jpeg2000 = dwvPath + '/decoders/pdfjs/decode-jpeg2000.js';
