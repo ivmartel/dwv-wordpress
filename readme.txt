@@ -2,7 +2,7 @@
 Contributors: ivmartel
 Tags: dicom, html5, javascript
 Requires at least: 4.5
-Stable tag: 0.10.1
+Stable tag: 0.10.2
 Tested up to: 6.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
