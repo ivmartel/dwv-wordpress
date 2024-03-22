@@ -3,7 +3,7 @@ Contributors: ivmartel
 Tags: dicom, html5, javascript
 Requires at least: 4.5
 Stable tag: 0.9.0
-Tested up to: 6.1
+Tested up to: 6.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,14 @@ DWV supports most of the DICOM standard but it can sometimes fail to load data. 
 You can test your data on the latest live version of DWV on its [demo](http://ivmartel.github.io/dwv/demo/stable/viewers/mobile/index.html) page.
 
 == Changelog ==
+
+= 0.10.0 =
+* Update gui to look more like https://github.com/ivmartel/dwv-simplistic
+ * new toolbar with icons
+ * add toggle orientation
+ * add ruler
+ * add progress bar
+* Updated dwv to v0.32
 
 = 0.9.0 =
 * Add the 'Dicom' block
