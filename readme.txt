@@ -84,6 +84,9 @@ You can test your data on the latest live version of DWV on its [demo](http://iv
 
 == Changelog ==
 
+= 0.10.2 =
+* Really fix compressed data load...
+
 = 0.10.1 =
 * Fix compressed data load
 
