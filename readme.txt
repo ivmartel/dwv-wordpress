@@ -79,8 +79,8 @@ The steps to add DICOM files to a gallery are similar than for images. They are:
 
 = Error loading data =
 DWV supports most of the DICOM standard but it can sometimes fail to load data. Please refer to the
-[Dicom-Support](https://github.com/ivmartel/dwv/wiki/Dicom-Support) page on its wiki to see what it supports.
-You can test your data on the latest live version of DWV on its [demo](http://ivmartel.github.io/dwv/demo/stable/viewers/mobile/index.html) page.
+[conformance](https://ivmartel.github.io/dwv/doc/stable/tutorial-conformance.html) page on its doc to see what it supports.
+You can test your data on the latest live version of DWV on its [demo](https://ivmartel.github.io/dwv/demo/stable/viewer.html) page.
 
 == Changelog ==
 
