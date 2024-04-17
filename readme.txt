@@ -3,7 +3,7 @@ Contributors: ivmartel
 Tags: dicom, html5, javascript
 Requires at least: 4.5
 Stable tag: 0.10.3
-Tested up to: 6.4
+Tested up to: 6.5
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ DWV supports most of the DICOM standard but it can sometimes fail to load data. 
 You can test your data on the latest live version of DWV on its [demo](https://ivmartel.github.io/dwv/demo/stable/viewer.html) page.
 
 == Changelog ==
+
+= 0.10.4 =
+* Fix dwv build
 
 = 0.10.3 =
 * Fix Image does not completely fill div
