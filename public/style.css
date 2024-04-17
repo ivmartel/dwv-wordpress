@@ -24,7 +24,7 @@ progress {
 /* toolbar */
 .toolbar {
   font: 14px arial, sans-serif;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
