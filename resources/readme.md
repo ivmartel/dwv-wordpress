@@ -17,7 +17,7 @@ On the svn repo:
 1. Update the tag's `readme.txt` `Stable tag` to the release version
 1. Commit tag: `svn commit -m "Release v#.#.#"`
 1. Update the trunk `readme.txt` `Stable tag` to the release version (will trigger the wordpress publish)
-1. `svn commit -m "Publish v#.#.#"`
+1. Commit the release: `svn commit -m "Publish v#.#.#"`
 
 On the githup repo:
 1. Update the `readme.txt` `stable tag`
