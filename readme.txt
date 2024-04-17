@@ -84,6 +84,9 @@ You can test your data on the latest live version of DWV on its [demo](https://i
 
 == Changelog ==
 
+= 0.10.5 =
+* Fix super small display div
+
 = 0.10.4 =
 * Fix dwv build
 
