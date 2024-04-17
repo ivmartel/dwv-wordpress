@@ -84,6 +84,9 @@ You can test your data on the latest live version of DWV on its [demo](https://i
 
 == Changelog ==
 
+= 0.10.3 =
+* Fix Image does not completely fill div
+
 = 0.10.2 =
 * Really fix compressed data load...
 
