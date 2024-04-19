@@ -14,7 +14,7 @@ progress {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #ddd;
+  /*background-color: #ddd;*/
 }
 .layer {
   position: absolute;
