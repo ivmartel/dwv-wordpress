@@ -82,6 +82,7 @@ function getSelect(toolName, appGui) {
   option.appendChild(document.createTextNode('Preset...'));
   var select = document.createElement('select');
   select.id = appGui.getToolId(toolName);
+  select.title = 'Window level presets';
   select.appendChild(option);
   select.onchange = function () {
     appGui.onChangePreset(this.value);
@@ -121,7 +122,7 @@ dwvsimple.Gui = function (app, tools, uid) {
   this.init = function () {
     var toolbar = document.getElementById('toolbar-' + uid);
     for (var i = 0; i < tools.length; ++i) {
-      if (tools[i] === 'presets') {
+      if (tools[i] === 'WindowLevelPresets') {
         toolbar.appendChild(getSelect(tools[i], self));
       } else {
         toolbar.appendChild(getToolButton(tools[i], self));
@@ -269,7 +270,7 @@ dwvsimple.Gui = function (app, tools, uid) {
   this.onDisplayReset = function () {
     app.resetDisplay();
     // reset preset dropdown
-    var presetsId = this.getToolId('presets');
+    var presetsId = this.getToolId('WindowLevelPresets');
     var domPresets = document.getElementById(presetsId);
     domPresets.selectedIndex = 0;
   };
@@ -340,7 +341,7 @@ dwvsimple.Gui = function (app, tools, uid) {
  * @param {Array} presets The list of presets to use as options.
  */
 dwvsimple.Gui.prototype.updatePresets = function (presets) {
-  var presetsId = this.getToolId('presets');
+  var presetsId = this.getToolId('WindowLevelPresets');
   var domPresets = document.getElementById(presetsId);
   // clear previous
   while (domPresets.hasChildNodes()) {
@@ -361,7 +362,7 @@ dwvsimple.Gui.prototype.updatePresets = function (presets) {
  * @param {string} name The name of the preset to select.
  */
 dwvsimple.Gui.prototype.setSelectedPreset = function (name) {
-  var presetsId = this.getToolId('presets');
+  var presetsId = this.getToolId('WindowLevelPresets');
   var domPresets = document.getElementById(presetsId);
   // find the index
   var index = 0;
