@@ -2462,19 +2462,19 @@
     mime "^3.0.0"
     web-vitals "^3.5.0"
 
-"@wordpress/element@^5.33.0":
-  version "5.33.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/element/-/element-5.33.0.tgz#33ffd6c75ed8f711b55f8e6051dc09e963d23c78"
-  integrity sha512-RNisHbRgAO5/RLyfckgHYWgKq+IKd8Yn1mJHYWp+1Fx+1K6vjlhr/1D4a81fWL15IoCTV3tYh6zYei4/fRpZog==
+"@wordpress/element@^5.34.0":
+  version "5.34.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/element/-/element-5.34.0.tgz#8e35222d05ad9ec77c31aeb62b2a2619b610353c"
+  integrity sha512-/d/lWBDYYgzE2yeXYvPnjMSDG1EdQs5TSLdjM/drQVJMxWayFqAPaF/pVczLHCPYfjgyJN4Zc+bneAKj6dEiLw==
   dependencies:
     "@babel/runtime" "^7.16.0"
     "@types/react" "^18.0.21"
     "@types/react-dom" "^18.0.6"
-    "@wordpress/escape-html" "^2.56.0"
+    "@wordpress/escape-html" "^2.57.0"
     change-case "^4.1.2"
     is-plain-object "^5.0.0"
-    react "^18.2.0"
-    react-dom "^18.2.0"
+    react "^18.3.0"
+    react-dom "^18.3.0"
 
 "@wordpress/env@^9.8.0":
   version "9.8.0"
@@ -2494,10 +2494,10 @@
     terminal-link "^2.0.0"
     yargs "^17.3.0"
 
-"@wordpress/escape-html@^2.56.0":
-  version "2.56.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/escape-html/-/escape-html-2.56.0.tgz#042626b9fc33dbd210b24ed554e71a9a9665b246"
-  integrity sha512-f+NDe9ZyUtaoiU8VYSKRjxsKqqzinrVcpcqj+umiLhKD5ShGW8V7LcSr3JOdE4TgjHvw2eezFvRmEo/kXowmMA==
+"@wordpress/escape-html@^2.57.0":
+  version "2.57.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/escape-html/-/escape-html-2.57.0.tgz#7d9137e54d0c63aff99799e33e433c0e1b22a7a8"
+  integrity sha512-DkTDo1Qhvs9rfobBpg5vXAOKaev3Jox8R5ryvYIhql5chrkj/V5k2ZzwUChFXxYmivVkWacCwDGmDmwe2ex/ag==
   dependencies:
     "@babel/runtime" "^7.16.0"
 
@@ -2543,14 +2543,14 @@
     sprintf-js "^1.1.1"
     tannin "^1.2.0"
 
-"@wordpress/icons@^9.47.0":
-  version "9.47.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-9.47.0.tgz#ea817c822b2e307bdfb5c9ec555933037a2c0c6a"
-  integrity sha512-IQIoEr0LxPWUOgcHnMIqU/ytg3x/swxbl8AGG1ONFks3/2tYdDk3I2/CAYgQGpaiSFIOJjNVk1keqa8DBOnciw==
+"@wordpress/icons@^9.48.0":
+  version "9.48.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-9.48.0.tgz#fee59ca531e57903f84466917c3a818d274931ab"
+  integrity sha512-47efXMuqX8Qbf7sFyYeUJ0TPjs3tNqnjHUn3WGc7Gq1IIYD6EGYFmCzPAfciUIXwRBhez2oC4y6IAXl5GP3KBw==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@wordpress/element" "^5.33.0"
-    "@wordpress/primitives" "^3.54.0"
+    "@wordpress/element" "^5.34.0"
+    "@wordpress/primitives" "^3.55.0"
 
 "@wordpress/jest-console@^7.28.0":
   version "7.28.0"
@@ -2594,13 +2594,13 @@
   resolved "https://registry.yarnpkg.com/@wordpress/prettier-config/-/prettier-config-3.14.0.tgz#010db0dcb9d2cdc4546ddef55165e33d9278e7fc"
   integrity sha512-jJZ79rfHGB3UY7y3DGDvJ7Udzw0DxN0i4JGtYyYBsMUitskZxBOV1kiAK8R/fuZAmCVy8P0bx/akXvd0itIpkw==
 
-"@wordpress/primitives@^3.54.0":
-  version "3.54.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/primitives/-/primitives-3.54.0.tgz#7e46aed14c1e261314171b4fc496ce5214604d54"
-  integrity sha512-2TrXDvYW3V0nlq6ZCYYvJ5obPZNtrsuIdB0iLdUavCOSBoXTROhRZY9Pxz45bB2CLlmEUs9OfL7izx9IuAg4Mw==
+"@wordpress/primitives@^3.55.0":
+  version "3.55.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/primitives/-/primitives-3.55.0.tgz#4873ee5b320c7b2d1c60c25db0d2e6123520d298"
+  integrity sha512-4vMhlu40+qxkt6lyCv2KWCx9bP7hcpPC9GXj9Kq3gwKIzSSHoqbYs3V8HYeGWrG9g7JWMFN9Pkdy8Bm61ZsKuQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@wordpress/element" "^5.33.0"
+    "@wordpress/element" "^5.34.0"
     classnames "^2.3.1"
 
 "@wordpress/scripts@^27.8.0":
@@ -8520,13 +8520,13 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@^18.3.0:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
+  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "^0.23.2"
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -8542,13 +8542,6 @@ react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
-
-react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
-  dependencies:
-    loose-envify "^1.1.0"
 
 react@^18.3.0:
   version "18.3.1"
@@ -8909,10 +8902,10 @@ saxes@^6.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+scheduler@^0.23.2:
+  version "0.23.2"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.2.tgz#414ba64a3b282892e944cf2108ecc078d115cdc3"
+  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
   dependencies:
     loose-envify "^1.1.0"
 
