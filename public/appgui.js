@@ -302,8 +302,9 @@ dwvsimple.Gui = function (app, tools, uid) {
     };
     app.setDataViewConfigs(config);
     // render data
-    for (var i = 0; i < app.getNumberOfLoadedData(); ++i) {
-      app.render(i);
+    var dataIds = app.getDataIds();
+    for (var i = 0; i < dataIds.length; ++i) {
+      app.render(dataIds[i]);
     }
   };
 
