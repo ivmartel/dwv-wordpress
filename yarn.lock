@@ -2478,10 +2478,10 @@
     react "^18.3.0"
     react-dom "^18.3.0"
 
-"@wordpress/env@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.1.0.tgz#546300a535ee094b13b5bda33fafe382ccbaa1bd"
-  integrity sha512-kctjcTTWlQlG2IjjQGTLK/1Z6P4pl2W7Z34gbOR0eouqHlfJ7lJ44HXsHKUbNwIPzU7a/iLCT/N1B1b0TNu66Q==
+"@wordpress/env@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.2.0.tgz#9ebb7b9d89a146ee8a27b29751d436c8b2324b81"
+  integrity sha512-EToZYPGXpl42Asw3bxpX8aKmHfRUdGxKPjQ9CHZVQoTAL27Af4FyjyGnepsnDpnYdIeI8VPb2S3k2NL/1+fpIA==
   dependencies:
     chalk "^4.0.0"
     copy-dir "^1.3.0"
