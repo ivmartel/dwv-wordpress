@@ -2464,15 +2464,15 @@
     mime "^3.0.0"
     web-vitals "^3.5.0"
 
-"@wordpress/element@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/element/-/element-6.1.0.tgz#3f6decc73b22095f795e71997ad54f7cab466599"
-  integrity sha512-DqAGqal1i6gTfYxz95zHnckbweS43MroHqMcz/Rww60pysTCoaRG5KZ/v4/3hry1tNCem1WQguY4ZMTF0MMTBQ==
+"@wordpress/element@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/element/-/element-6.2.0.tgz#44a05b4bd37e6e4f88db8ae87a109283b0ab510a"
+  integrity sha512-pRCchhYoH7eN0bxL4iUMBm82psqSUozlmk4B5IhQiqzYoOWn7OjvkGqejAnt81iDZUNZ8hIY2gLpRplgwwiZlQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
     "@types/react" "^18.2.79"
     "@types/react-dom" "^18.2.25"
-    "@wordpress/escape-html" "^3.1.0"
+    "@wordpress/escape-html" "^3.2.0"
     change-case "^4.1.2"
     is-plain-object "^5.0.0"
     react "^18.3.0"
@@ -2496,10 +2496,10 @@
     terminal-link "^2.0.0"
     yargs "^17.3.0"
 
-"@wordpress/escape-html@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/escape-html/-/escape-html-3.1.0.tgz#b119e6ef9b3bca59ce48e1d1eafe82269415d231"
-  integrity sha512-wcRGrGuGV4kTd5hJMXy/bdjCObqcwqFmd/HkDAUi2pfngEsv2aJhAeTfkGP5NwmY/F03Oqz2Qgd4UzTiIu2bjQ==
+"@wordpress/escape-html@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/escape-html/-/escape-html-3.2.0.tgz#86ca52251ec9dd1f94a1ff0bf92e48b6a8e788bf"
+  integrity sha512-GFJ91lrs46zN3bgRGBHREaZ4jegwUA+2Gx+P6f11VDLhihNGKyg67uNf0lXqLoLj6iQQCBDP+15k/0k2ccr3YA==
   dependencies:
     "@babel/runtime" "^7.16.0"
 
@@ -2545,14 +2545,14 @@
     sprintf-js "^1.1.1"
     tannin "^1.2.0"
 
-"@wordpress/icons@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-10.1.0.tgz#d3ca2c97284186d28a69191a101a43b23d90bc7b"
-  integrity sha512-s0USxIPq54Ubmsrz+lHepgJieKhi/PyvS/EI/ZVsFnyQbNKwuTSVHY2vifWrkZffwdG1XeP6Cz2Qnoy2cs9TeQ==
+"@wordpress/icons@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-10.2.0.tgz#05c41f3e4fc5aae97132f009145c39547cb51c50"
+  integrity sha512-6N39YvCUHgmqfewByKY1biBE+w/r/o1O9hQgW/zd4v1RVFQNOTxfmhqSmbbTePLzrdKcbB1setM+lJtwvwvrnA==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@wordpress/element" "^6.1.0"
-    "@wordpress/primitives" "^4.1.0"
+    "@wordpress/element" "^6.2.0"
+    "@wordpress/primitives" "^4.2.0"
 
 "@wordpress/jest-console@^8.1.0":
   version "8.1.0"
@@ -2596,13 +2596,13 @@
   resolved "https://registry.yarnpkg.com/@wordpress/prettier-config/-/prettier-config-4.1.0.tgz#173cad691df66aa7ced5f7a4939105ad4da5db5b"
   integrity sha512-sWqX/hKvXne6QhTGWW8LbYSiNc2xLfuVcInrBaam4uMvZeCqWQUS90VAhNvBF0e6wRnMFqxcUKDF1xDGmVheGA==
 
-"@wordpress/primitives@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/primitives/-/primitives-4.1.0.tgz#b93fa14bfd7f50551f56ae1e96c1a8ae83cd6fe9"
-  integrity sha512-+SSPqaHLz6ZNu+jDLoXYW+TFWyLsvZBQYjfU46YT6l6eWq3o7YO6Exrbr4wtEgXv1AY+b/9GJ8OUMPPywrXw0A==
+"@wordpress/primitives@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/primitives/-/primitives-4.2.0.tgz#5dc0267c26bcbf060aa34d2d4864e5b35bfc7a8e"
+  integrity sha512-UofDIMe3pQ4UvubCAjm4/Y+o/niAiHFRjhavvxBOZ5iCFyjG/1knbJcWa8+0qvjIA5YTBzZxfN6PD4Je1SwtFw==
   dependencies:
     "@babel/runtime" "^7.16.0"
-    "@wordpress/element" "^6.1.0"
+    "@wordpress/element" "^6.2.0"
     clsx "^2.1.1"
 
 "@wordpress/scripts@^28.1.0":
