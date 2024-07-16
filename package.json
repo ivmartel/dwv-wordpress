@@ -19,7 +19,7 @@
   "devDependencies": {
     "@wordpress/env": "^10.3.0",
     "@wordpress/icons": "^10.3.0",
-    "@wordpress/scripts": "^28.2.0"
+    "@wordpress/scripts": "^28.3.0"
 	},
   "scripts": {
     "build": "wp-scripts build",
