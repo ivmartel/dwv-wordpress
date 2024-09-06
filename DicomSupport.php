@@ -85,8 +85,7 @@ class DicomSupport {
     // enqueue base style
     wp_enqueue_style('dwv-wordpress');
     // enqueue base scripts
-    wp_enqueue_script('dwv-appgui');
-    wp_enqueue_script('dwv-applaunch');
+    wp_enqueue_script('dwv-simplistic');
     wp_enqueue_script('wpinit');
 
     // html var names
@@ -95,7 +94,7 @@ class DicomSupport {
     // create app script
     $script = "// App ".$id."\n";
     $script .= "document.addEventListener('DOMContentLoaded', function (/*event*/) {\n";
-    $script .= "  startApp('".$id."',\n";
+    $script .= "  dwvsimplistic.startApp('".$id."',\n";
     $script .= "    {\n";
     $script .= "      urls: [".$urls."]";
     // possible input preset
@@ -229,13 +228,10 @@ class DicomSupport {
     wp_register_script( 'dwv',
       plugins_url($nodeModulesDir . '/dwv/dist/dwv.min.js', __FILE__ ),
       array('konva', 'jszip', 'pdfjs-jpg', 'pdfjs-jpx', 'rii-loss', 'dwv-rle'), null );
+    wp_register_script( 'dwv-simplistic',
+      plugins_url($nodeModulesDir . '/dwv-simplistic/dist/dwvsimplistic.min.js', __FILE__ ),
+      array('dwv'), null );
     // wordpress viewer
-    wp_register_script( 'dwv-appgui',
-      plugins_url('public/appgui.js', __FILE__ ),
-      array( 'dwv' ), null );
-    wp_register_script( 'dwv-applaunch',
-      plugins_url('public/applauncher.js', __FILE__ ),
-      array( 'dwv' ), null );
     wp_register_style( 'dwv-wordpress',
       plugins_url('public/style.css', __FILE__ ) );
 
