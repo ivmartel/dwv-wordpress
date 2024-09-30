@@ -4377,10 +4377,10 @@ duplexer@^0.1.2:
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
-dwv-simplistic@0.9.0-beta.3:
-  version "0.9.0-beta.3"
-  resolved "https://registry.yarnpkg.com/dwv-simplistic/-/dwv-simplistic-0.9.0-beta.3.tgz#c0b0d068b25ec33f746aa0faed26d4460cc610f7"
-  integrity sha512-SCDVAoWA9P0cSXHBrYGzU3UM3bc4nylGm4yTRfLvRm5MYTT/QbtPMGkfkkqT+kldMJXdPladO0rDtq/f1XajXA==
+dwv-simplistic@0.9.0-beta.4:
+  version "0.9.0-beta.4"
+  resolved "https://registry.yarnpkg.com/dwv-simplistic/-/dwv-simplistic-0.9.0-beta.4.tgz#174735cc782262c2e8737a4f9fd2f774b5cf3aa7"
+  integrity sha512-EqSZvJhGw3o6urhNszfHB1OInhiEbK6ySiPLloO1EKm+cFvuKdPGidmKUbW6YMFI3+tO/G72LehQ0Uzsr2HSYg==
   dependencies:
     dwv "0.33.1"
 
