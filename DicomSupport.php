@@ -88,31 +88,6 @@ class DicomSupport {
     wp_enqueue_script('dwv-simplistic');
     wp_enqueue_script('wpinit');
 
-    // html var names
-    $id = uniqid();
-
-    // create app script
-    $script = "// App ".$id."\n";
-    $script .= "document.addEventListener('DOMContentLoaded', function (/*event*/) {\n";
-    $script .= "  dwvsimplistic.startApp('".$id."',\n";
-    $script .= "    {\n";
-    $script .= "      urls: [".$urls."]";
-    // possible input preset
-    if ( !empty($windowCenter) && $windowCenter != 0 &&
-      !empty($windowWidth) && $windowWidth != 0 ) {
-      $script .= ",\n";
-      $script .= "      wlpreset: {width: ".$windowWidth.
-        ", center: ".$windowCenter.
-        ", name: '".$wlName."'}";
-    }
-    // end options object
-    $script .= "\n    }\n";
-    $script .= "  )\n";
-    $script .= "})\n";
-
-    // add script to 'wpinit'
-    $this->wpinit($script);
-
     // possible input size
     $style = '';
     if (!empty($width) && $width != 0) {
@@ -120,22 +95,23 @@ class DicomSupport {
     }
     if (!empty($height) && $height != 0) {
       $style .= 'height: '.$height.'px;';
+    } else {
+      $style .= 'height: 80%';
     }
     if (!empty($style)) {
       $style = "style=\"" . $style . "\"";
     }
 
-    // create html
-    $html = '
-    <!-- Main container div -->
-    <div id="dwv-'.$id.'" class="dwv" '.$style.'>
-      <!-- Toolbar -->
-      <div id="toolbar-'.$id.'" class="toolbar"></div>
-      <!-- Layer Container -->
-      <div id="layerGroup-'.$id.'" class="layerGroup">
-      </div>
-    </div><!-- /dwv -->
-    ';
+    // // create html
+    $html = "<dwv-simple urls=\"".$urls."\" ".$style;
+    // possible input preset
+    if ( !empty($windowCenter) && $windowCenter != 0 &&
+      !empty($windowWidth) && $windowWidth != 0 ) {
+      $html .= " wlpresetname=\"".$wlName."\"".
+        " wlpresetcenter=\"".$windowCenter."\"".
+        " wlpresetwidth=\"".$windowWidth."\"";
+    }
+    $html .= '></dwv-simple>';
 
     return $html;
   }
@@ -185,7 +161,7 @@ class DicomSupport {
     } else if ( !empty($atts['src']) ) {
       $fileList = array_map('trim', explode(',', $atts['src']));
     }
-    $urls = '"' . implode('","', $fileList) . '"';
+    $urls = implode(',', $fileList);
 
     // return html
     return $this->create_dwv_html($urls, $width, $height, $wc, $ww, $wlName);
