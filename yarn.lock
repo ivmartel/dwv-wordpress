@@ -4377,20 +4377,20 @@ duplexer@^0.1.2:
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
-dwv-simplistic@0.9.0-beta.6:
-  version "0.9.0-beta.6"
-  resolved "https://registry.yarnpkg.com/dwv-simplistic/-/dwv-simplistic-0.9.0-beta.6.tgz#4f440ddb44b9f8356c560e9be0b64c80603b62c8"
-  integrity sha512-w3igR+MjwiXVlM83xBh//3QzqSEuMkPqU0Izu9bIle6IMjvZUi5KjPtpZTqZbiEsbBerNuRGz7Cs7oR3Hsn3dw==
+dwv-simplistic@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/dwv-simplistic/-/dwv-simplistic-0.9.0.tgz#6de2e81a38a931794f461f0fd4158e8703173ee7"
+  integrity sha512-vPlxHYHkvM9eAvJdzIHMsT5uSA55XVuvMso1TRYeiNhHYDZ4S6bPUFt1npAR2W8dqCVpiEiO6MzGO6PVSpSYxg==
   dependencies:
-    dwv "0.33.1"
+    dwv "0.34.0"
 
-dwv@0.33.1:
-  version "0.33.1"
-  resolved "https://registry.yarnpkg.com/dwv/-/dwv-0.33.1.tgz#4285fe43f85c10c29c6d6f187ed6575e76082bf0"
-  integrity sha512-o8yT1sFlQOO5joNf7EvKDTyx57GjwgbLKrTZ1Eh79PEQlJd4DdOvzFnyKHT1ZYouHltnP/Fivp77TabYY+lA6g==
+dwv@0.34.0:
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/dwv/-/dwv-0.34.0.tgz#d4b5a137fa72bfb2c4d30ae1bb0bcb5f7778e1b7"
+  integrity sha512-58ta1yJuWvD7lYPHnP1qqYhI33zdM5UxrJvhG2EbWa/+Nf1XvKY//T0NfY5zT5J/OEIltMPKG0YwOwx+iR7jOw==
   dependencies:
     jszip "^3.10.1"
-    konva "~8.4.2"
+    konva "~9.3.16"
     magic-wand-tool "~1.1.7"
 
 ee-first@1.1.1:
@@ -6979,10 +6979,10 @@ known-css-properties@^0.26.0:
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.26.0.tgz#008295115abddc045a9f4ed7e2a84dc8b3a77649"
   integrity sha512-5FZRzrZzNTBruuurWpvZnvP9pum+fe0HcK8z/ooo+U+Hmp4vtbyp1/QDsqmufirXy4egGzbaH/y2uCZf+6W5Kg==
 
-konva@~8.4.2:
-  version "8.4.3"
-  resolved "https://registry.yarnpkg.com/konva/-/konva-8.4.3.tgz#d6754fdb53e69295c24dbdfe967a27f92da51e47"
-  integrity sha512-ARqdgAbdNIougRlOKvkQwHlGhXPRBV4KvhCP+qoPpGoVQwwiJe4Hkdu4HHdRPb9rGUp04jDTAxBzEwBsE272pg==
+konva@~9.3.16:
+  version "9.3.16"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-9.3.16.tgz#0e8b52e8cb20c80c5e4cb98d0babd89ff6f95a2c"
+  integrity sha512-qa47cefGDDHzkToGRGDsy24f/Njrz7EHP56jQ8mlDcjAPO7vkfTDeoBDIfmF7PZtpfzDdooafQmEUJMDU2F7FQ==
 
 language-subtag-registry@^0.3.20:
   version "0.3.23"
