@@ -17,7 +17,7 @@
     "dwv-simplistic": "^0.9.0"
   },
   "devDependencies": {
-    "@wordpress/env": "^10.12.0",
+    "@wordpress/env": "^10.13.0",
     "@wordpress/icons": "^10.12.0",
     "@wordpress/scripts": "~27.9.0"
 	},
