@@ -2529,10 +2529,10 @@
     sprintf-js "^1.1.1"
     tannin "^1.2.0"
 
-"@wordpress/icons@^10.13.0":
-  version "10.13.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-10.13.0.tgz#7a58bf2f4c8019da4ea355a5dada2a6015feccdb"
-  integrity sha512-qmCuJrv3VsVnFxbLtYJU9Th+GUKbckwluMae0p+IgNHtebZhW6ES7eX87kAOmCieo6FxrCWR0zD9kuopUUE44Q==
+"@wordpress/icons@^10.14.0":
+  version "10.14.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/icons/-/icons-10.14.0.tgz#a27298b438653a9a502eb4ee3b02b42ce516da2e"
+  integrity sha512-4S1AaBeqvTpsTC23y0+4WPiSyz7j+b7vJ4vQ4nqnPeBF7ZeC8J/UXWQnEuKY38n8TiutXljgagkEqGNC9pF2Mw==
   dependencies:
     "@babel/runtime" "7.25.7"
     "@wordpress/element" "*"
