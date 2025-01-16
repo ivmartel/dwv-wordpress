@@ -88,12 +88,18 @@ class DicomSupport {
     wp_enqueue_script('dwv-simplistic');
     wp_enqueue_script('wpinit');
 
+    // cast to ensure input type
+    $width = (int) $width;
+    $height = (int) $height;
+    $windowCenter = (float) $windowCenter;
+    $windowWidth = (float) $windowWidth;
+
     // possible input size
     $style = '';
-    if (!empty($width) && $width != 0) {
+    if ($width != 0) {
       $style .= 'width: '.$width.'px;';
     }
-    if (!empty($height) && $height != 0) {
+    if ($height != 0) {
       $style .= 'height: '.$height.'px;';
     } else {
       $style .= 'height: 80%;';
@@ -105,9 +111,8 @@ class DicomSupport {
     // // create html
     $html = "<dwv-simple urls=\"".$urls."\" ".$style;
     // possible input preset
-    if ( !empty($windowCenter) && $windowCenter != 0 &&
-      !empty($windowWidth) && $windowWidth != 0 ) {
-      $html .= " wlpresetname=\"".$wlName."\"".
+    if ($windowCenter != 0 && $windowWidth != 0 ) {
+      $html .= " wlpresetname=\"".esc_attr($wlName)."\"".
         " wlpresetcenter=\"".$windowCenter."\"".
         " wlpresetwidth=\"".$windowWidth."\"";
     }
