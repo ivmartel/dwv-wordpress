@@ -96,7 +96,7 @@ class DicomSupport {
     if (!empty($height) && $height != 0) {
       $style .= 'height: '.$height.'px;';
     } else {
-      $style .= 'height: 80%';
+      $style .= 'height: 80%;';
     }
     if (!empty($style)) {
       $style = "style=\"" . $style . "\"";
