@@ -94,22 +94,17 @@ class DicomSupport {
     $windowCenter = (float) $windowCenter;
     $windowWidth = (float) $windowWidth;
 
-    // possible input size
-    $style = '';
-    if ($width != 0) {
-      $style .= 'width: '.$width.'px;';
-    }
-    if ($height != 0) {
-      $style .= 'height: '.$height.'px;';
-    } else {
-      $style .= 'height: 80%;';
-    }
-    if (!empty($style)) {
-      $style = "style=\"" . $style . "\"";
-    }
-
     // // create html
-    $html = "<dwv-simple urls=\"".$urls."\" ".$style;
+    $html = "<dwv-simple urls=\"".$urls."\"";
+    // possible input size
+    if ($height != 0) {
+      $html .= " height=\"".$height."px\"";
+    } else {
+      $html .= " height=\"500px\"";
+    }
+    if ($width != 0) {
+      $html .= " width=\"".$width."px\"";
+    }
     // possible input preset
     if ($windowCenter != 0 && $windowWidth != 0 ) {
       $html .= " wlpresetname=\"".esc_attr($wlName)."\"".
