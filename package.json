@@ -20,7 +20,7 @@
     "@wordpress/env": "^10.19.0",
     "@wordpress/icons": "^10.19.0",
     "@wordpress/scripts": "~27.9.0"
-	},
+  },
   "scripts": {
     "build": "wp-scripts build",
     "format": "wp-scripts format",
@@ -32,5 +32,5 @@
     "wp-env": "wp-env",
     "wpstart": "wp-env start",
     "wpstop": "wp-env stop"
-	}
+  }
 }
