@@ -89,6 +89,12 @@ class DicomSupport {
     wp_enqueue_script('dwv-applaunch');
     wp_enqueue_script('wpinit');
 
+    // cast to ensure input type
+    $width = (int) $width;
+    $height = (int) $height;
+    $windowCenter = (float) $windowCenter;
+    $windowWidth = (float) $windowWidth;
+
     // html var names
     $id = uniqid();
 
@@ -99,12 +105,11 @@ class DicomSupport {
     $script .= "    {\n";
     $script .= "      urls: [".$urls."]";
     // possible input preset
-    if ( !empty($windowCenter) && $windowCenter != 0 &&
-      !empty($windowWidth) && $windowWidth != 0 ) {
+    if ($windowCenter != 0 && $windowWidth != 0 ) {
       $script .= ",\n";
       $script .= "      wlpreset: {width: ".$windowWidth.
         ", center: ".$windowCenter.
-        ", name: '".$wlName."'}";
+        ", name: '".esc_attr($wlName)."'}";
     }
     // end options object
     $script .= "\n    }\n";
@@ -116,10 +121,10 @@ class DicomSupport {
 
     // possible input size
     $style = '';
-    if (!empty($width) && $width != 0) {
+    if ($width != 0) {
       $style .= 'width: '.$width.'px;';
     }
-    if (!empty($height) && $height != 0) {
+    if ($height != 0) {
       $style .= 'height: '.$height.'px;';
     }
     if (!empty($style)) {
