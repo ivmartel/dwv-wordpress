@@ -83,6 +83,9 @@ DWV supports most of the DICOM standard but it can sometimes fail to load data. 
 You can test your data on the latest live version of DWV on its [demo](https://ivmartel.github.io/dwv/demo/stable/viewer.html) page.
 
 == Changelog ==
+= 0.10.7 =
+* Fix security issue
+
 = 0.10.6 =
 * Fix full screen
 * Remove layerGroup background colour
