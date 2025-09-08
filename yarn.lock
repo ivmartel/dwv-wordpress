@@ -2595,10 +2595,10 @@
     react "^18.3.0"
     react-dom "^18.3.0"
 
-"@wordpress/env@^10.29.0":
-  version "10.29.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.29.0.tgz#77f5a203bd0e8db3786e857412a38c7a7dfe82d6"
-  integrity sha512-iBqFwUCSfYPTpMphuEm9KeDtrXerkana4bcRoJKqbqMMyRMlYCt40FNTuqQsK65XIFaHMvjlm4mBbeRdYcyatQ==
+"@wordpress/env@^10.30.0":
+  version "10.30.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.30.0.tgz#9d89eae765bb4f0650fec5fc8be5c3585dfef670"
+  integrity sha512-tSLv+JExJe5BZpZcExxEtPsIoivxglnes2l7yvxxiaCHwY39LZsgn6lX8QPet4KOoZqE5R/HjH6mXS+lFc3Q/w==
   dependencies:
     "@inquirer/prompts" "^7.2.0"
     chalk "^4.0.0"
