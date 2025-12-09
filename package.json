@@ -32,5 +32,6 @@
     "wp-env": "wp-env",
     "wpstart": "wp-env start",
     "wpstop": "wp-env stop"
-  }
+  },
+  "packageManager": "yarn@4.12.0"
 }
