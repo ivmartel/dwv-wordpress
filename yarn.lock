@@ -3592,9 +3592,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wordpress/env@npm:^10.36.0":
-  version: 10.36.0
-  resolution: "@wordpress/env@npm:10.36.0"
+"@wordpress/env@npm:^10.37.0":
+  version: 10.37.0
+  resolution: "@wordpress/env@npm:10.37.0"
   dependencies:
     "@inquirer/prompts": "npm:^7.2.0"
     chalk: "npm:^4.0.0"
@@ -3610,7 +3610,7 @@ __metadata:
     yargs: "npm:^17.3.0"
   bin:
     wp-env: bin/wp-env
-  checksum: 10c0/ece5fc2da183cb1d23ec1b59ee670b55a4fd9f95606bc8ba25654b65b41c704ed4374d6daa0859132da0f53733b1eb6e01b12e7f1adba8505e0866f67bd3cf31
+  checksum: 10c0/83544de38b56199cc8a9382b0874d54e67128db3743d48fdef77e5365b57caa080ec327f799c3ecfe8d3384e7618cc97419b87989272cfffdbd71594824a966c
   languageName: node
   linkType: hard
 
@@ -3889,7 +3889,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "DicomSupport@workspace:."
   dependencies:
-    "@wordpress/env": "npm:^10.36.0"
+    "@wordpress/env": "npm:^10.37.0"
     "@wordpress/icons": "npm:^11.4.0"
     "@wordpress/scripts": "npm:~27.9.0"
     dwv-simplistic: "npm:^0.9.3"
