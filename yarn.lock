@@ -2164,13 +2164,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noble/hashes@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@noble/hashes@npm:1.4.0"
-  checksum: 10c0/8c3f005ee72e7b8f9cff756dfae1241485187254e3f743873e22073d63906863df5d4f13d441b7530ea614b7a093f0d889309f28b59850f33b66cb26a779a4a5
-  languageName: node
-  linkType: hard
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2519,592 +2512,223 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@peculiar/asn1-cms@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-cms@npm:2.6.0"
+"@php-wasm/cli-util@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/cli-util@npm:3.1.5"
   dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    "@peculiar/asn1-x509-attr": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/976809372160bd228c4364dd76f8f7a3f8110c92ff012dbe3a15f6e228cc1447bf23fba08da277e39c3c457ecf31b67ada99df2e394f8e6ea2f0cd8780e4280f
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-csr@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-csr@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/1984e6c4f2200ca758e5cf3d632c23b8862553d023881cf51e153f2e90590ebb6a9dafb217e85aeac84e77be3013b14e7c4d61c4dbe6866c6885ca91fd45a098
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-ecc@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-ecc@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/9181c991f0cab70c4ab97564d91cf3f2489dbf64b56085e92cc28899a16bdf285edaa0a35164b3c6ddebcdd07bb7612d0eaddbaa7bc876ff06811346a7449a38
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-pfx@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-pfx@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-cms": "npm:^2.6.0"
-    "@peculiar/asn1-pkcs8": "npm:^2.6.0"
-    "@peculiar/asn1-rsa": "npm:^2.6.0"
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/1bca317ad8b94c8b4925deddc2cbdf36a30a0e71fb0ed9e1f5871278436d7f878a312eed4a1fcc9216100db0361fed9453db41154732eaeb0c24b076e5ebdff1
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-pkcs8@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-pkcs8@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/42b3c8a9adcd20aa658436880523abc23cd7245c3680d0c3d66e9726f2543a2a1fb362c6056f1330d2f880abd5b6d8d77fe5a76d1b46b919eedb7f23b3699f12
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-pkcs9@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-pkcs9@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-cms": "npm:^2.6.0"
-    "@peculiar/asn1-pfx": "npm:^2.6.0"
-    "@peculiar/asn1-pkcs8": "npm:^2.6.0"
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    "@peculiar/asn1-x509-attr": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/241e2d1c6cc738d971401c2ed5df1819e2b55b4a2d9f1b2d83ab4b150c21af37dfd120dc23953422cc648dbb7d1ed5ed4bbb035c856d4e036379e8c8692a419d
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-rsa@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-rsa@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/4d1a1ac2beec28fd4231a3aeced2f296b8514483d35cb778995032e98d3955c9240f754573cfd62f0fd2dacf9cd79c8381f25f737e412349f7afe4db1c3528f5
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-schema@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-schema@npm:2.6.0"
-  dependencies:
-    asn1js: "npm:^3.0.6"
-    pvtsutils: "npm:^1.3.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/8c283b10a2e4aca4cb20d242cde773c9a798ea15a6c221d1474ef483e182d48195aeb5dde3f7b518f236eceb7808ae4438539d41a3aa9ed6d20aa4d36a21a0c2
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-x509-attr@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-x509-attr@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/599ec61a8f193eed0653e19172c7c627485f0311d50b82524530a555b7f237a8547f50ec5ffdcdafa2756f0df24125fcb754fd4b66ad8eb67b3e7017652668a6
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-x509@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@peculiar/asn1-x509@npm:2.6.0"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    asn1js: "npm:^3.0.6"
-    pvtsutils: "npm:^1.3.6"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/bdb15792f470d134b0a1e6a0cdd240852c2a80484bb9b054aa5ae39e4ef59df3cbf78cb601058c7738d6ce09a2731f30ff2a88f023aa745db58d2aa33ec448b8
-  languageName: node
-  linkType: hard
-
-"@peculiar/x509@npm:^1.14.2":
-  version: 1.14.3
-  resolution: "@peculiar/x509@npm:1.14.3"
-  dependencies:
-    "@peculiar/asn1-cms": "npm:^2.6.0"
-    "@peculiar/asn1-csr": "npm:^2.6.0"
-    "@peculiar/asn1-ecc": "npm:^2.6.0"
-    "@peculiar/asn1-pkcs9": "npm:^2.6.0"
-    "@peculiar/asn1-rsa": "npm:^2.6.0"
-    "@peculiar/asn1-schema": "npm:^2.6.0"
-    "@peculiar/asn1-x509": "npm:^2.6.0"
-    pvtsutils: "npm:^1.3.6"
-    reflect-metadata: "npm:^0.2.2"
-    tslib: "npm:^2.8.1"
-    tsyringe: "npm:^4.10.0"
-  checksum: 10c0/949231ca9daf84534bfe255f28a856df497302fed294d227c6a28e50f5cfb67ed1d91afe6db787b88294ce042295243dbcb44455fe2efa5ed07428a74392eec9
-  languageName: node
-  linkType: hard
-
-"@php-wasm/cli-util@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/cli-util@npm:3.0.46"
-  dependencies:
-    fast-xml-parser: "npm:5.3.0"
-    fs-ext: "npm:2.1.1"
+    "@php-wasm/util": "npm:3.1.5"
+    fast-xml-parser: "npm:^5.3.4"
     jsonc-parser: "npm:3.3.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/83a59ed5e2db06924147313d39897e9c921b8382ff043f504e88d5b8135c3560e115d5bf4c703a6b68e6de3f3402c828a7c85cafd47d7d9b5bf778d664e82533
+  checksum: 10c0/43158b73a8f32649e0070165c053b5a3ba94ffd667d534658c6a62f7d27a189b4f69fc586ad464031815a0beee6ce8f7978fdd60087e89716bdb1fc2eebb640b
   languageName: node
   linkType: hard
 
-"@php-wasm/fs-journal@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/fs-journal@npm:3.0.46"
+"@php-wasm/logger@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/logger@npm:3.1.5"
   dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+  checksum: 10c0/95209fe9f1a54d233f6ee3747bee7d019dcd50b49ba3dc006ddaed05e3d879d68abdc311a2abcf91eb80dc69eadef6625402cb1412ea63f2bff7764754c9fdb5
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-7-4@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-7-4@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
     ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/ec5d0cac8e75471a5db59ecdef120beefe0d9f38c32203e1da15c634b8409d77c05b87daf6a6a8f1edae790dd2c0a2c86815692377da04aa90f35b9c59fb8d99
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-0@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-0@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/1b80deb0627d6f01f227ed70244b5417cd06643c78f5176c4f68601b691ea9d58000b188f1f711bac2a530f553e01953b38a55a45c0e95ec4f6ef590fd7b4e21
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-1@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-1@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/a77f290fa44f508d737ced92226d9c2f0d43319ed09f6c665cf92b790e50893b7b025f2496d9508941a12446eceec2f82d487f7c7885d14e1297250fadf7c7a4
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-2@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-2@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/a107cf4aaef4a67543bd95bf773eb21f60ccae453c70facf69fc50fddf6f807b837ff12c77331aefbd82e2f7955736814b7315df0d5e2a2527dbdf96e9420cb4
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-3@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-3@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/8a01411d1b212867112f5aa29c528e16ff99e7cbd719e201db44f56cbf7cc20054b6cd1c26f8fc83d773f06217ccf51df90ffb7cc88ec674ee74bac444082ef5
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-4@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-4@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/4ade0051f6a816593648e84640d3a3de08ea15694cb1bf398887fb77f1022d0200253d1bcd85d4fc8a3e98f71c5e5070277d029945d96f58ee4d70eccf025942
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-8-5@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-8-5@npm:3.1.5"
+  dependencies:
+    "@php-wasm/universal": "npm:3.1.5"
+    ini: "npm:4.1.2"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+  checksum: 10c0/15e88612af8d8d23035a00088bb3a9515fd66d52df805044a4a2f1682ef0bf73e85583af020ff602243c3b77750de1e1fed961f9fddd2c62f0e638d8698cff12
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node-polyfills@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node-polyfills@npm:3.1.5"
+  checksum: 10c0/dcaa45a4715a3ff5c0e2c1d0119163475650cc8d651a7e2e75762d82b9a1bf174e0335d7b4217d5b69f45dc3770b72bb2fde20659f482ea2b250cfb093705758
+  languageName: node
+  linkType: hard
+
+"@php-wasm/node@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/node@npm:3.1.5"
+  dependencies:
+    "@php-wasm/cli-util": "npm:3.1.5"
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node-7-4": "npm:3.1.5"
+    "@php-wasm/node-8-0": "npm:3.1.5"
+    "@php-wasm/node-8-1": "npm:3.1.5"
+    "@php-wasm/node-8-2": "npm:3.1.5"
+    "@php-wasm/node-8-3": "npm:3.1.5"
+    "@php-wasm/node-8-4": "npm:3.1.5"
+    "@php-wasm/node-8-5": "npm:3.1.5"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
+    "@wp-playground/common": "npm:3.1.5"
+    express: "npm:4.22.0"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
+    ini: "npm:4.1.2"
+    jsonc-parser: "npm:3.3.1"
     wasm-feature-detect: "npm:1.8.0"
     ws: "npm:8.18.3"
     yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/6aba164ececca0826917d87ea05b5bff40b846a94666c19021aa89f77797be13726f17d0a3a4f7cf5386563a1d27f4c56edacf6871c2c24af47087aa4790c5dd
+  checksum: 10c0/20c1ef99ef2a09dfbd5370466fcaac0c059d49c5ddbcc85c7314cfa7d1af1ae072d197499e284f880d3015ae3a36641e8c674b2c66f7dcc6731168cd18187b14
   languageName: node
   linkType: hard
 
-"@php-wasm/logger@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/logger@npm:3.0.46"
+"@php-wasm/progress@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/progress@npm:3.1.5"
   dependencies:
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/d434083da7ec5befb71ddb209049573b76e6cef2347e61a95ae39ecddfd35dd9d6405f004aee76acad0f8dcb5ecf1ee4ea17c167bd3eb89040161ef001b9b104
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+  checksum: 10c0/2e42a627294c27c5bf47023a4674448c787c0da94b4bd40837c045418be8da427a76a1979d08e243b0e071de85b3bfc3b4670b06c3959fa0c60117fbc5628399
   languageName: node
   linkType: hard
 
-"@php-wasm/node-7-4@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-7-4@npm:3.0.46"
+"@php-wasm/scopes@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/scopes@npm:3.1.5"
+  checksum: 10c0/3c1bff2432e2baf697cec16e6c68c58c3d274a00927b6d80ce5bbe394a114e6c1f564c3ba3ef99f92f6bd256a7ae3f051dbaf00a291aa647e0705990d96f4e2b
+  languageName: node
+  linkType: hard
+
+"@php-wasm/stream-compression@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/stream-compression@npm:3.1.5"
   dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
+  checksum: 10c0/521b166ca686f29b4d33515253e93fc01db5c9393dec480d3dd1c1ed7d19da6f49000946ce05cd481431431e58de859ddebfbbc02e03e0260bd96bca22be3d75
+  languageName: node
+  linkType: hard
+
+"@php-wasm/universal@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/universal@npm:3.1.5"
+  dependencies:
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+    "@php-wasm/progress": "npm:3.1.5"
+    "@php-wasm/stream-compression": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
     ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/b7bf07748ba4263b1f95ed4231cd3957743043267b97a249a73a7a783b82921d9b4e0358c3154927531bfe9d9a2d775ecdcba0fbcaf5df8332352b3dbc79e888
+  checksum: 10c0/5bba85abcd01d8e462e57347617f2c70da7f5b4e81a0868fd7d23ea534461ac6fa246f0146b585199818f42f82206e4968805aee40ddaf1b2d320cb3a9123270
   languageName: node
   linkType: hard
 
-"@php-wasm/node-8-0@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-0@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/4f9e8e5441bc6e7da40f207646f9162a1de8b903055666afcf809b61f2c6490016a042d233ea426d03e2540e9aab632bc6a4850d0cd9f81363c2e3ee7c6ab49f
+"@php-wasm/util@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/util@npm:3.1.5"
+  checksum: 10c0/0e3ccbcbdbf150e8c6f25ce95a13cfda7fe72aa27ab9fa57cb4b6e7492b89bf922eea40220aaf3f687b8d01f9b3e2584ded8ceeff93f834960ee86efd3557c69
   languageName: node
   linkType: hard
 
-"@php-wasm/node-8-1@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-1@npm:3.0.46"
+"@php-wasm/web-service-worker@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/web-service-worker@npm:3.1.5"
   dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/2256da929691ad9ea9a801b670ae117de64006e36df2b6b65775bf5f9c68063f67f8fd3794715a9d787c8894089f22c3f48d6ecf4ecd824e71f88bdda07e937f
+    "@php-wasm/scopes": "npm:3.1.5"
+  checksum: 10c0/ed82c56b82b3b26c03db47056f8b493400a215ae0db0101850e743cae4661d02f95c45cdb729bd72eaddb9d214551917ae2846a54ab7f3f3ec1a171c795e571e
   languageName: node
   linkType: hard
 
-"@php-wasm/node-8-2@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-2@npm:3.0.46"
+"@php-wasm/xdebug-bridge@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@php-wasm/xdebug-bridge@npm:3.1.5"
   dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/c5e8bb57a25f3f82e4d1d8106672f74e3bf968e5cd4a42f18311cd4288fe3d3047c897f70b4bcd5de99e662b983ed5ca1b9149d72405a98270240a42d2f3992a
-  languageName: node
-  linkType: hard
-
-"@php-wasm/node-8-3@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-3@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/69c49a1eeb9348c8bdb620b1434e199378c66874e34d37125b08f43684bcb8ee41683afdff1b25bca8abd5cc655decf88321b72c06b9d1f7e10845e3487074b2
-  languageName: node
-  linkType: hard
-
-"@php-wasm/node-8-4@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-4@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/50708c2a3c87628146a2f8f9feef663e89410b094f58a0051bed2cb24bf659254bb60edd3a44465990fcbd53f4c58c1c5476baa25889b222b45bd3930ee58f7d
-  languageName: node
-  linkType: hard
-
-"@php-wasm/node-8-5@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-8-5@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/bae5fed49f36a7131ec0e0b0814e767efe4dbae29ce3b8a0726257b026a011383784dedc9a416f1f2079991d30c69de113c641f785cc974f34d4956072746e82
-  languageName: node
-  linkType: hard
-
-"@php-wasm/node-polyfills@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node-polyfills@npm:3.0.46"
-  dependencies:
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/a91647c9188235213d4627a8e42e5c4c84435b9ecf36eb55af135845314a01f0e87097b44ba4a268ab071ead0c4d5c85d3d4a316da0da6477fb3d582684a01d4
-  languageName: node
-  linkType: hard
-
-"@php-wasm/node@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/node@npm:3.0.46"
-  dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node-7-4": "npm:3.0.46"
-    "@php-wasm/node-8-0": "npm:3.0.46"
-    "@php-wasm/node-8-1": "npm:3.0.46"
-    "@php-wasm/node-8-2": "npm:3.0.46"
-    "@php-wasm/node-8-3": "npm:3.0.46"
-    "@php-wasm/node-8-4": "npm:3.0.46"
-    "@php-wasm/node-8-5": "npm:3.0.46"
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@wp-playground/common": "npm:3.1.5"
     express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
     ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-    yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/42e42e6b86d709d24b2db8b4521284c0c4c5ad250fd29b07748f402730ec5e6975d9335be6b9063f068f3e484bf1dec3f17ff552acf399deedd23f1e88956950
-  languageName: node
-  linkType: hard
-
-"@php-wasm/progress@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/progress@npm:3.0.46"
-  dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/f0a3397f383484c285326fe6e9c5c41f0dc05465283835ca983f517ef7bad080946b55fbe6143b3dda59386c22505403fd7e66c9c3c52687ad61dd4ea23e0232
-  languageName: node
-  linkType: hard
-
-"@php-wasm/scopes@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/scopes@npm:3.0.46"
-  dependencies:
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/c9febfc914f7fbd9c94eddc5542881069632d3169cd7d77159a2aa020e1da89f56a70038888b6a767059f709cf52cd9285f1a59b413c4de2bcb3f33f180a78e1
-  languageName: node
-  linkType: hard
-
-"@php-wasm/stream-compression@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/stream-compression@npm:3.0.46"
-  dependencies:
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/86037be4c6c00987d343f8a4493e53e527d1204ef0d3ac031c09890654b23b74259703bac60b04d933d7dc432fe96bab4f5afc534df03920814e31d17357b596
-  languageName: node
-  linkType: hard
-
-"@php-wasm/universal@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/universal@npm:3.0.46"
-  dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    "@php-wasm/progress": "npm:3.0.46"
-    "@php-wasm/stream-compression": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/4337d9879c938edddb23cbcdc75513edd5e51a332810b55ed16a857f179e6d51467ffe6c43f8395a73c15229fcc73eb5ea1c9653df7d5b5a8eb2a528b593a431
-  languageName: node
-  linkType: hard
-
-"@php-wasm/util@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/util@npm:3.0.46"
-  dependencies:
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/9fec997787f49d0f8decd9f9dae83db9c317d55739c8fe18f347d5ba0273455c8ba7538c33b3450afc79efc26a177ff16d1e083b2aa4613d3fa5f91b70fa4ec1
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-7-4@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-7-4@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/da9b5f232c66a439bc9322eaa4076c94dfb9ebf9cfc3291040541dfbf3a89ec309d9af2a6cf72e5aab0005b56239650e19148e5ca94f618273d2f2954d9b0687
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-0@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-0@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/9b82f1881078cf604a081bac04ea209c2fdb416ff1d06fdfdd3fd0a5b2486e6fe85125769f6254121de2e2624e021cc3817e32c45db6e7764214292c318af158
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-1@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-1@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/b144d7b6396eda514d23ff8939e6e4ae76dd184b789a728438c015f569c75bdeb71f4eb5fb2b87c26b59b4bbccf8889a796f6dc6da88d99a08bf3c21d980e606
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-2@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-2@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/f17e7ffc439f547dae987d2df9dcde83cdfc08688d6f72c4890e2e0b3a0661af9cb4863c9d4cd07def124dedecd1548a0507b2a77943f0319c193e999b9c490c
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-3@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-3@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/065079fddd9e9bdce7e161b7831af329c060bcad6bff028ba2c6c8fc9bc0887872b8078e7cf8809fc217c35aa5ead84e50cd8ea537042855493aea6a7a99e1a2
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-4@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-4@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/e9b0588795942aa1434366d5ad468483ac8c5bf3e0c921aefaacf640f34252889d9883e9c507e784431b2c8cb9b15b927641b18a69a06eb9c608970c09782880
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-8-5@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-8-5@npm:3.0.46"
-  dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    wasm-feature-detect: "npm:1.8.0"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/cd22c85230d278b4fba5e0530ba35c0a0da95d29abf93526e315b498e5eb88bb78abe5462d732647344ed60d6f3e2e9abeb522c6d9e7c26f563a8bb02acdc72b
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web-service-worker@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web-service-worker@npm:3.0.46"
-  dependencies:
-    "@php-wasm/scopes": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/a953b1880b1093b30ee3496f29ded0a6506380646ec62b25992afee1e41d3b5842cdcf3736382f2c5cfc4251e447b28748d275914328d06ac540d8cab5cbcd34
-  languageName: node
-  linkType: hard
-
-"@php-wasm/web@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/web@npm:3.0.46"
-  dependencies:
-    "@php-wasm/fs-journal": "npm:3.0.46"
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@php-wasm/web-7-4": "npm:3.0.46"
-    "@php-wasm/web-8-0": "npm:3.0.46"
-    "@php-wasm/web-8-1": "npm:3.0.46"
-    "@php-wasm/web-8-2": "npm:3.0.46"
-    "@php-wasm/web-8-3": "npm:3.0.46"
-    "@php-wasm/web-8-4": "npm:3.0.46"
-    "@php-wasm/web-8-5": "npm:3.0.46"
-    "@php-wasm/web-service-worker": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
-    express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
-    selfsigned: "npm:5.5.0"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-    yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/a3843ce6f10a7fb24d68db5b600c3534e5a02c7f0c2ca4259a641e58491d22239bc7b82d6182e52bc185ecc203f12e32e762b55db74d21ea15792e6ecf030be6
-  languageName: node
-  linkType: hard
-
-"@php-wasm/xdebug-bridge@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@php-wasm/xdebug-bridge@npm:3.0.46"
-  dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
-    express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
-    ini: "npm:4.1.2"
+    jsonc-parser: "npm:3.3.1"
     wasm-feature-detect: "npm:1.8.0"
     ws: "npm:8.18.3"
     xml2js: "npm:0.6.2"
     yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
   bin:
     xdebug-bridge: xdebug-bridge.js
-  checksum: 10c0/35f2c0882d47fc239dfa06d71aaa84137d3d2cfabff07ad8705e74c55046084278c32cc8630a0e7b4fe8455e8a06f90bb2bc70ec4b061ae0e008c0fbd92c45ab
+  checksum: 10c0/da57b5d26a0d3894c3463dad985b8e44cc1af154a6db7a8612e1ecd03bb665da564393f42e67692bb2d87377c3403a5270019dd1b5c038699a68b5b33f9f3c77
   languageName: node
   linkType: hard
 
@@ -4531,12 +4155,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wordpress/env@npm:^10.39.0":
-  version: 10.39.0
-  resolution: "@wordpress/env@npm:10.39.0"
+"@wordpress/env@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@wordpress/env@npm:11.1.0"
   dependencies:
     "@inquirer/prompts": "npm:^7.2.0"
-    "@wp-playground/cli": "npm:^3.0.0"
+    "@wp-playground/cli": "npm:^3.0.48"
     chalk: "npm:^4.0.0"
     copy-dir: "npm:^1.3.0"
     cross-spawn: "npm:^7.0.6"
@@ -4547,11 +4171,10 @@ __metadata:
     ora: "npm:^4.0.2"
     rimraf: "npm:^5.0.10"
     simple-git: "npm:^3.5.0"
-    terminal-link: "npm:^2.0.0"
     yargs: "npm:^17.3.0"
   bin:
     wp-env: bin/wp-env
-  checksum: 10c0/071243f5d773dcd64721d9b3024130fd3ac2586b0e030b62ff22f145d95972aee3e464fc4dabe36957e368df4e2109d656118986d5f28fdddb85f7a681fd073e
+  checksum: 10c0/38337ef86695eb59f97bf70214d8b7fc2d22a4adbdf9e077e0e25489eddc376230dc40e97f302681dc3030dfc08ce2df89c0319dbcf8bae70a4d34c6f6eca76b
   languageName: node
   linkType: hard
 
@@ -4813,22 +4436,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wp-playground/blueprints@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@wp-playground/blueprints@npm:3.0.46"
+"@wp-playground/blueprints@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@wp-playground/blueprints@npm:3.1.5"
   dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node": "npm:3.0.46"
-    "@php-wasm/node-polyfills": "npm:3.0.46"
-    "@php-wasm/progress": "npm:3.0.46"
-    "@php-wasm/scopes": "npm:3.0.46"
-    "@php-wasm/stream-compression": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@php-wasm/web": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
-    "@wp-playground/storage": "npm:3.0.46"
-    "@wp-playground/wordpress": "npm:3.0.46"
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node": "npm:3.1.5"
+    "@php-wasm/node-polyfills": "npm:3.1.5"
+    "@php-wasm/progress": "npm:3.1.5"
+    "@php-wasm/scopes": "npm:3.1.5"
+    "@php-wasm/stream-compression": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
+    "@php-wasm/web-service-worker": "npm:3.1.5"
+    "@wp-playground/common": "npm:3.1.5"
+    "@wp-playground/storage": "npm:3.1.5"
+    "@wp-playground/wordpress": "npm:3.1.5"
     "@zip.js/zip.js": "npm:2.7.57"
     ajv: "npm:8.12.0"
     async-lock: "npm:1.4.1"
@@ -4836,42 +4459,41 @@ __metadata:
     crc-32: "npm:1.2.2"
     diff3: "npm:0.0.4"
     express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
     ignore: "npm:5.3.2"
     ini: "npm:4.1.2"
+    jsonc-parser: "npm:3.3.1"
     minimisted: "npm:2.0.1"
     octokit: "npm:3.1.2"
     pako: "npm:1.0.10"
     pify: "npm:2.3.0"
     readable-stream: "npm:3.6.2"
-    selfsigned: "npm:5.5.0"
     sha.js: "npm:2.4.12"
     simple-get: "npm:4.0.1"
     wasm-feature-detect: "npm:1.8.0"
     ws: "npm:8.18.3"
     yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/634b0d393b14bd70ea127d374ac0d430b3b0fbe6727414852967f55d851af259e4da9728abd648c58868a244563498519a173eda87188fc3356aae5a70a255d7
+  checksum: 10c0/ed3de4ad7f89cb72e0bf97e2ed056faedd63c28d5ae0cfd8120a13f27a032d3535504a44be69874edbd9d46a326548dff786be701a49f90cb252956f8116d192
   languageName: node
   linkType: hard
 
-"@wp-playground/cli@npm:^3.0.0":
-  version: 3.0.46
-  resolution: "@wp-playground/cli@npm:3.0.46"
+"@wp-playground/cli@npm:^3.0.48":
+  version: 3.1.5
+  resolution: "@wp-playground/cli@npm:3.1.5"
   dependencies:
-    "@php-wasm/cli-util": "npm:3.0.46"
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node": "npm:3.0.46"
-    "@php-wasm/progress": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@php-wasm/xdebug-bridge": "npm:3.0.46"
-    "@wp-playground/blueprints": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
-    "@wp-playground/storage": "npm:3.0.46"
-    "@wp-playground/wordpress": "npm:3.0.46"
+    "@php-wasm/cli-util": "npm:3.1.5"
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node": "npm:3.1.5"
+    "@php-wasm/progress": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
+    "@php-wasm/xdebug-bridge": "npm:3.1.5"
+    "@wp-playground/blueprints": "npm:3.1.5"
+    "@wp-playground/common": "npm:3.1.5"
+    "@wp-playground/storage": "npm:3.1.5"
+    "@wp-playground/tools": "npm:3.1.5"
+    "@wp-playground/wordpress": "npm:3.1.5"
     "@zip.js/zip.js": "npm:2.7.57"
     ajv: "npm:8.12.0"
     async-lock: "npm:1.4.1"
@@ -4879,8 +4501,8 @@ __metadata:
     crc-32: "npm:1.2.2"
     diff3: "npm:0.0.4"
     express: "npm:4.22.0"
-    fast-xml-parser: "npm:5.3.0"
-    fs-ext: "npm:2.1.1"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
     fs-extra: "npm:11.1.1"
     ignore: "npm:5.3.2"
     ini: "npm:4.1.2"
@@ -4891,7 +4513,6 @@ __metadata:
     pify: "npm:2.3.0"
     ps-man: "npm:1.1.8"
     readable-stream: "npm:3.6.2"
-    selfsigned: "npm:5.5.0"
     sha.js: "npm:2.4.12"
     simple-get: "npm:4.0.1"
     tmp-promise: "npm:3.0.3"
@@ -4899,45 +4520,35 @@ __metadata:
     ws: "npm:8.18.3"
     xml2js: "npm:0.6.2"
     yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
   bin:
     wp-playground-cli: wp-playground.js
-  checksum: 10c0/afa3794a958431bf2b4261617d1ab2fb0da2e800f8bb40c447365a3d944642cc407d40223b1f70fb7ba831b9aaa896f67c0ed4794ed59b21f19ae4dbedfe80c7
+  checksum: 10c0/0012363e39ab70eb4997a8b4d15ff042790036d54835f64f0ad9c2cfcb48dd5feb724dff1d6b59207ebd2a3e406f62f44c44127e9a7e3cf3d099e7fd24748c6e
   languageName: node
   linkType: hard
 
-"@wp-playground/common@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@wp-playground/common@npm:3.0.46"
+"@wp-playground/common@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@wp-playground/common@npm:3.1.5"
   dependencies:
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    fs-ext: "npm:2.1.1"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
     ini: "npm:4.1.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/3f46e75b76489b0ebfe52f6ff4037eccdd90acda6790d8d5d3da48967bbf3fdd53462448e9925b3ae1106dce60253af940dadb1579d7007ce5b916fe059febb3
+  checksum: 10c0/8a67c4f441b673b92bf1bec48f8a2d0a4ac18d7a31dcfe68d9a4756183693810fd1204f567ca74d6de635900d4e851c9ffa84b3df6a72022bd8ef0e8580cb743
   languageName: node
   linkType: hard
 
-"@wp-playground/storage@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@wp-playground/storage@npm:3.0.46"
+"@wp-playground/storage@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@wp-playground/storage@npm:3.1.5"
   dependencies:
-    "@php-wasm/stream-compression": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@php-wasm/web": "npm:3.0.46"
+    "@php-wasm/stream-compression": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
     "@zip.js/zip.js": "npm:2.7.57"
     async-lock: "npm:^1.4.1"
     clean-git-ref: "npm:^2.0.1"
     crc-32: "npm:^1.2.0"
     diff3: "npm:0.0.3"
-    express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
     ignore: "npm:^5.1.4"
     ini: "npm:4.1.2"
     minimisted: "npm:^2.0.0"
@@ -4945,38 +4556,61 @@ __metadata:
     pako: "npm:^1.0.10"
     pify: "npm:^4.0.1"
     readable-stream: "npm:^3.4.0"
-    selfsigned: "npm:5.5.0"
     sha.js: "npm:^2.4.9"
     simple-get: "npm:^4.0.1"
-    wasm-feature-detect: "npm:1.8.0"
-    ws: "npm:8.18.3"
-    yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/aa47bd9a44b0d49f63f0007af28807b6aabbe6e9a9f47518268e9a63c1f99b5a7d6e8ef5f279e1770c4716207c8a99c2f64187797ae15c7c5d1b01e8f2c83948
+  checksum: 10c0/f11ce0eba3d784950d0fc1b4e597b362d1532c0e4ae212fd36f6ee47b1a1d34fea9e0b2fe724d8f6665f6f5acc36bed901aacca33ac942a67725d272a8ff9e04
   languageName: node
   linkType: hard
 
-"@wp-playground/wordpress@npm:3.0.46":
-  version: 3.0.46
-  resolution: "@wp-playground/wordpress@npm:3.0.46"
+"@wp-playground/tools@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@wp-playground/tools@npm:3.1.5"
   dependencies:
-    "@php-wasm/logger": "npm:3.0.46"
-    "@php-wasm/node": "npm:3.0.46"
-    "@php-wasm/universal": "npm:3.0.46"
-    "@php-wasm/util": "npm:3.0.46"
-    "@wp-playground/common": "npm:3.0.46"
+    "@wp-playground/blueprints": "npm:3.1.5"
+    "@zip.js/zip.js": "npm:2.7.57"
+    ajv: "npm:8.12.0"
+    async-lock: "npm:1.4.1"
+    clean-git-ref: "npm:2.0.1"
+    crc-32: "npm:1.2.2"
+    diff3: "npm:0.0.4"
     express: "npm:4.22.0"
-    fs-ext: "npm:2.1.1"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
+    ignore: "npm:5.3.2"
     ini: "npm:4.1.2"
+    jsonc-parser: "npm:3.3.1"
+    minimisted: "npm:2.0.1"
+    octokit: "npm:3.1.2"
+    pako: "npm:1.0.10"
+    pify: "npm:2.3.0"
+    readable-stream: "npm:3.6.2"
+    sha.js: "npm:2.4.12"
+    simple-get: "npm:4.0.1"
     wasm-feature-detect: "npm:1.8.0"
     ws: "npm:8.18.3"
     yargs: "npm:17.7.2"
-  dependenciesMeta:
-    fs-ext:
-      optional: true
-  checksum: 10c0/8fcd631f32149cffc8321e647c89c5c80440bc3f4fa0c28a364b723b0b695c6a8011e627e0f4f41a1ef87f44a5943dcc7013857e738abcd65914dfa69299fa2e
+  checksum: 10c0/d21510e77151e2d1844f4a53cdef8407b1e2aa33598a38989d7d450e16ef260e9f4abf8d9ae69243c2f784644ad759d25c8375a4ec4c26977bd057d4ed65067a
+  languageName: node
+  linkType: hard
+
+"@wp-playground/wordpress@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@wp-playground/wordpress@npm:3.1.5"
+  dependencies:
+    "@php-wasm/logger": "npm:3.1.5"
+    "@php-wasm/node": "npm:3.1.5"
+    "@php-wasm/universal": "npm:3.1.5"
+    "@php-wasm/util": "npm:3.1.5"
+    "@wp-playground/common": "npm:3.1.5"
+    express: "npm:4.22.0"
+    fast-xml-parser: "npm:^5.3.4"
+    fs-ext-extra-prebuilt: "npm:2.2.7"
+    ini: "npm:4.1.2"
+    jsonc-parser: "npm:3.3.1"
+    wasm-feature-detect: "npm:1.8.0"
+    ws: "npm:8.18.3"
+    yargs: "npm:17.7.2"
+  checksum: 10c0/3b5d4be2291c533eb422a141f49ac334c3b6ce2e6a955b554cab6f042168ae1fdd2b106fc06e38e2e19449cc2c0797c0832c1a65bf1ad0165540297844021794
   languageName: node
   linkType: hard
 
@@ -5005,7 +4639,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "DicomSupport@workspace:."
   dependencies:
-    "@wordpress/env": "npm:^10.39.0"
+    "@wordpress/env": "npm:^11.1.0"
     "@wordpress/icons": "npm:^11.8.0"
     "@wordpress/scripts": "npm:~27.9.0"
     dwv-simplistic: "npm:^0.9.3"
@@ -5487,17 +5121,6 @@ __metadata:
   version: 1.0.1
   resolution: "arrify@npm:1.0.1"
   checksum: 10c0/c35c8d1a81bcd5474c0c57fe3f4bad1a4d46a5fa353cedcff7a54da315df60db71829e69104b859dff96c5d68af46bd2be259fe5e50dc6aa9df3b36bea0383ab
-  languageName: node
-  linkType: hard
-
-"asn1js@npm:^3.0.6":
-  version: 3.0.7
-  resolution: "asn1js@npm:3.0.7"
-  dependencies:
-    pvtsutils: "npm:^1.3.6"
-    pvutils: "npm:^1.1.3"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/7e79795edf1bcc86532c4084aa7c8c0ebc57f7dd6f964ad6de956abf617329722f6964b7af3a5d1c4554dd61b4b148ae1580e63e3ec2e70e7fba34f6df072b29
   languageName: node
   linkType: hard
 
@@ -6027,13 +5650,6 @@ __metadata:
   version: 3.1.2
   resolution: "bytes@npm:3.1.2"
   checksum: 10c0/76d1c43cbd602794ad8ad2ae94095cddeb1de78c5dddaa7005c51af10b0176c69971a6d88e805a90c2b6550d76636e43c40d8427a808b8645ede885de4a0358e
-  languageName: node
-  linkType: hard
-
-"bytestreamjs@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "bytestreamjs@npm:2.0.1"
-  checksum: 10c0/edd66b7ca3f94aae99a1009304a42d82ca4c2085eb934192ff47a81f59215c975dc9d3cd8f23c40a2f43ef5b2fa6f01ace70b10ad247766cec6ec641b89eab48
   languageName: node
   linkType: hard
 
@@ -8621,14 +8237,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:5.3.0":
-  version: 5.3.0
-  resolution: "fast-xml-parser@npm:5.3.0"
+"fast-xml-builder@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "fast-xml-builder@npm:1.0.0"
+  checksum: 10c0/2631fda265c81e8008884d08944eeed4e284430116faa5b8b7a43a3602af367223b7bf01c933215c9ad2358b8666e45041bc038d64877156a2f88821841b3014
+  languageName: node
+  linkType: hard
+
+"fast-xml-parser@npm:^5.3.4":
+  version: 5.4.2
+  resolution: "fast-xml-parser@npm:5.4.2"
   dependencies:
-    strnum: "npm:^2.1.0"
+    fast-xml-builder: "npm:^1.0.0"
+    strnum: "npm:^2.1.2"
   bin:
     fxparser: src/cli/cli.js
-  checksum: 10c0/9e398f83ac7be548bdbdd4186bef79d25b518b091ce658ba02ef45187aad1e1cfcf0a6c12b85cd904a2d829f2248a4db51c06652a617e73516d99e9c88c646b2
+  checksum: 10c0/83ea57fda336f3fdcc8938ecc8730236a3e084843cbe6c2fb009c3f2fe2811570316735c1c7e76a4d3dbce2b0387312b106444d5d603dc6135b4bcf0e07251bb
   languageName: node
   linkType: hard
 
@@ -8959,13 +8583,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-ext@npm:2.1.1":
-  version: 2.1.1
-  resolution: "fs-ext@npm:2.1.1"
+"fs-ext-extra-prebuilt@npm:2.2.7":
+  version: 2.2.7
+  resolution: "fs-ext-extra-prebuilt@npm:2.2.7"
   dependencies:
-    nan: "npm:^2.21.0"
-    node-gyp: "npm:latest"
-  checksum: 10c0/51ae00eaa49d35a15b7a102b643fcfa532065d07201f26e6f49cef2a56c326256d578d2ef7ca821be5108aaffe3f330f8594f90765928bd672185dd0aeb3ca40
+    nan: "npm:^2.24.0"
+  checksum: 10c0/8cdbb088ed1531871fe0d85a8a4759ed627749198fcb5809cd9172cf81fb1ff96c4e40f2b6c70ceabeed75f7ccd3e0314132827c866f19e29722e46fa95ae654
   languageName: node
   linkType: hard
 
@@ -12362,7 +11985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:^2.21.0":
+"nan@npm:^2.24.0":
   version: 2.25.0
   resolution: "nan@npm:2.25.0"
   dependencies:
@@ -13223,20 +12846,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkijs@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "pkijs@npm:3.3.3"
-  dependencies:
-    "@noble/hashes": "npm:1.4.0"
-    asn1js: "npm:^3.0.6"
-    bytestreamjs: "npm:^2.0.1"
-    pvtsutils: "npm:^1.3.6"
-    pvutils: "npm:^1.1.3"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/7b60f3398c35538ce05b613b5ff86c0df6b7e236e2ba6063fec2f89a80eb214d45c175e19cf13e20bed0c474000f1d3653a5234efc42e9528d1912d2edae5914
-  languageName: node
-  linkType: hard
-
 "plur@npm:^4.0.0":
   version: 4.0.0
   resolution: "plur@npm:4.0.0"
@@ -13887,22 +13496,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pvtsutils@npm:^1.3.6":
-  version: 1.3.6
-  resolution: "pvtsutils@npm:1.3.6"
-  dependencies:
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/b1b42646370505ccae536dcffa662303b2c553995211330c8e39dec9ab8c197585d7751c2c5b9ab2f186feda0219d9bb23c34ee1e565573be96450f79d89a13c
-  languageName: node
-  linkType: hard
-
-"pvutils@npm:^1.1.3":
-  version: 1.1.5
-  resolution: "pvutils@npm:1.1.5"
-  checksum: 10c0/e968b07b78a58fec9377fe7aa6342c8cfa21c8fb4afc4e51e1489bd42bec6dc71b8a52541d0aede0aea17adec7ca3f89f29f56efdc31d0083cc02e9bb5721bcf
-  languageName: node
-  linkType: hard
-
 "qs@npm:6.13.0":
   version: 6.13.0
   resolution: "qs@npm:6.13.0"
@@ -14112,13 +13705,6 @@ __metadata:
     indent-string: "npm:^4.0.0"
     strip-indent: "npm:^3.0.0"
   checksum: 10c0/d64a6b5c0b50eb3ddce3ab770f866658a2b9998c678f797919ceb1b586bab9259b311407280bd80b804e2a7c7539b19238ae6a2a20c843f1a7fcff21d48c2eae
-  languageName: node
-  linkType: hard
-
-"reflect-metadata@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "reflect-metadata@npm:0.2.2"
-  checksum: 10c0/1cd93a15ea291e420204955544637c264c216e7aac527470e393d54b4bb075f10a17e60d8168ec96600c7e0b9fcc0cb0bb6e91c3fbf5b0d8c9056f04e6ac1ec2
   languageName: node
   linkType: hard
 
@@ -14656,16 +14242,6 @@ __metadata:
   version: 2.0.0
   resolution: "select-hose@npm:2.0.0"
   checksum: 10c0/01cc52edd29feddaf379efb4328aededa633f0ac43c64b11a8abd075ff34f05b0d280882c4fbcbdf1a0658202c9cd2ea8d5985174dcf9a2dac7e3a4996fa9b67
-  languageName: node
-  linkType: hard
-
-"selfsigned@npm:5.5.0":
-  version: 5.5.0
-  resolution: "selfsigned@npm:5.5.0"
-  dependencies:
-    "@peculiar/x509": "npm:^1.14.2"
-    pkijs: "npm:^3.3.3"
-  checksum: 10c0/a31e9d928e22cd6f4e14759a099feba79d9d789c852c7cf65ff8e2f62d7f6313fe477639590e7ed06115b4516a4bebbe0dec5d072a2d01cc372a9cfd58eb893b
   languageName: node
   linkType: hard
 
@@ -15551,10 +15127,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strnum@npm:^2.1.0":
-  version: 2.1.2
-  resolution: "strnum@npm:2.1.2"
-  checksum: 10c0/4e04753b793540d79cd13b2c3e59e298440477bae2b853ab78d548138385193b37d766d95b63b7046475d68d44fb1fca692f0a3f72b03f4168af076c7b246df9
+"strnum@npm:^2.1.2":
+  version: 2.2.0
+  resolution: "strnum@npm:2.2.0"
+  checksum: 10c0/9a656f5048047abff8d10d0bb57761a01916e368a71e95d4f5a962b57f64b738e20672e68ba10b7de3dc78e861c77bc0566bdeed7017abdda1caf0303c929a3f
   languageName: node
   linkType: hard
 
@@ -15688,7 +15264,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supports-hyperlinks@npm:^2.0.0, supports-hyperlinks@npm:^2.3.0":
+"supports-hyperlinks@npm:^2.3.0":
   version: 2.3.0
   resolution: "supports-hyperlinks@npm:2.3.0"
   dependencies:
@@ -15846,16 +15422,6 @@ __metadata:
     minizlib: "npm:^3.1.0"
     yallist: "npm:^5.0.0"
   checksum: 10c0/b6bb420550ef50ef23356018155e956cd83282c97b6128d8d5cfe5740c57582d806a244b2ef0bf686a74ce526babe8b8b9061527623e935e850008d86d838929
-  languageName: node
-  linkType: hard
-
-"terminal-link@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "terminal-link@npm:2.1.1"
-  dependencies:
-    ansi-escapes: "npm:^4.2.1"
-    supports-hyperlinks: "npm:^2.0.0"
-  checksum: 10c0/947458a5cd5408d2ffcdb14aee50bec8fb5022ae683b896b2f08ed6db7b2e7d42780d5c8b51e930e9c322bd7c7a517f4fa7c76983d0873c83245885ac5ee13e3
   languageName: node
   linkType: hard
 
@@ -16150,13 +15716,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "tslib@npm:2.8.1"
-  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
-  languageName: node
-  linkType: hard
-
 "tsutils@npm:^3.21.0":
   version: 3.21.0
   resolution: "tsutils@npm:3.21.0"
@@ -16165,15 +15724,6 @@ __metadata:
   peerDependencies:
     typescript: ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta"
   checksum: 10c0/02f19e458ec78ead8fffbf711f834ad8ecd2cc6ade4ec0320790713dccc0a412b99e7fd907c4cda2a1dc602c75db6f12e0108e87a5afad4b2f9e90a24cabd5a2
-  languageName: node
-  linkType: hard
-
-"tsyringe@npm:^4.10.0":
-  version: 4.10.0
-  resolution: "tsyringe@npm:4.10.0"
-  dependencies:
-    tslib: "npm:^1.9.3"
-  checksum: 10c0/918594b4dfac97beb8be2c041c6ec45f078ef3768ed4edfe35ae2c709ab503e2e6b454b2b37e692c658572d1972a428fbfdbc0a2b42fee727a83c1c685fbe5e1
   languageName: node
   linkType: hard
 
